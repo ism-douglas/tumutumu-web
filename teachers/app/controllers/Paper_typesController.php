@@ -3,7 +3,7 @@
  * Paper_types Page Controller
  * @category  Controller
  */
-class Paper_typesController extends BaseController{
+class Paper_typesController extends SecureController{
 	function __construct(){
 		parent::__construct();
 		$this->tablename = "paper_types";
@@ -19,7 +19,7 @@ class Paper_typesController extends BaseController{
 		$this->rec_id = $rec_id;
 		$tablename = $this->tablename;
 		//editable fields
-		$fields = $this->fields = array("id","paper_type");
+		$fields = $this->fields = array("id","paper_type","date_created","date_updated");
 		$page_error = null;
 		if($formdata){
 			$postdata = array();
@@ -29,18 +29,22 @@ class Paper_typesController extends BaseController{
 			$postdata = $this->format_request_data($postdata);
 			$this->rules_array = array(
 				'paper_type' => 'required',
+				'date_created' => 'required',
+				'date_updated' => 'required',
 			);
 			$this->sanitize_array = array(
 				'paper_type' => 'sanitize_string',
+				'date_created' => 'sanitize_string',
+				'date_updated' => 'sanitize_string',
 			);
 			$this->filter_rules = true; //filter validation rules by excluding fields not in the formdata
 			$modeldata = $this->modeldata = $this->validate_form($postdata);
-			$modeldata['date_updated'] = datetime_now();
 			if($this->validated()){
 				$db->where("paper_types.id", $rec_id);;
 				$bool = $db->update($tablename, $modeldata);
 				$numRows = $db->getRowCount();
 				if($bool && $numRows){
+					$this->write_to_log("edit", "true");
 					return render_json(
 						array(
 							'num_rows' =>$numRows,

@@ -16,30 +16,38 @@ class Menu{
 		),
 		
 		array(
-			'path' => 'past_papers', 
-			'label' => 'Past Papers', 
-			'icon' => ''
-		),
-		
-		array(
 			'path' => 'notes', 
 			'label' => 'Notes', 
-			'icon' => ''
+			'icon' => '<i class="fa fa-book "></i>'
 		),
 		
 		array(
-			'path' => 'exam_types', 
-			'label' => 'Exam Types', 
-			'icon' => ''
+			'path' => 'past_papers', 
+			'label' => 'Past Papers', 
+			'icon' => '<i class="fa fa-bookmark "></i>'
 		),
 		
 		array(
-			'path' => 'topics', 
-			'label' => 'Topics', 
-			'icon' => ''
+			'path' => 'assignments', 
+			'label' => 'Assignments', 
+			'icon' => '<i class="fa fa-paperclip "></i>'
 		)
 	);
 		
 	
 	
+			public static $account_status = array(
+		array(
+			"value" => "Active", 
+			"label" => "Active", 
+		),
+		array(
+			"value" => "Pending", 
+			"label" => "Pending", 
+		),
+		array(
+			"value" => "Blocked", 
+			"label" => "Blocked", 
+		),);
+		
 }

@@ -15,7 +15,7 @@
 			Html ::  page_css('animate.css');
 		?>
 				<?php 
-			Html ::  page_css('bootstrap-theme-simplex-mini.css');
+			Html ::  page_css('bootstrap-theme-simlex-teal-white.css');
 			Html ::  page_css('custom-style.css');
 		?>
 		<?php

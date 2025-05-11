@@ -45,17 +45,9 @@ $show_export_btn = $this->show_export_btn;
                             <table class="table table-hover table-borderless table-striped">
                                 <!-- Table Body Start -->
                                 <tbody class="page-data" id="page-data-<?php echo $page_element_id; ?>">
-                                    <tr  class="td-id">
-                                        <th class="title"> Notes ID: </th>
-                                        <td class="value"> <?php echo $data['id']; ?></td>
-                                    </tr>
-                                    <tr  class="td-topic">
-                                        <th class="title"> Topic: </th>
-                                        <td class="value"> <?php echo $data['topic']; ?></td>
-                                    </tr>
-                                    <tr  class="td-subject">
+                                    <tr  class="td-subjects_subject">
                                         <th class="title"> Subject: </th>
-                                        <td class="value"> <?php echo $data['subject']; ?></td>
+                                        <td class="value"> <?php echo $data['subjects_subject']; ?></td>
                                     </tr>
                                     <tr  class="td-level">
                                         <th class="title"> Level: </th>
@@ -81,59 +73,36 @@ $show_export_btn = $this->show_export_btn;
                                         <th class="title"> Date Updated: </th>
                                         <td class="value"> <?php echo $data['date_updated']; ?></td>
                                     </tr>
+                                    <tr  class="td-remarks">
+                                        <th class="title"> Remarks: </th>
+                                        <td class="value"> <?php echo $data['remarks']; ?></td>
+                                    </tr>
                                 </tbody>
                                 <!-- Table Body End -->
                             </table>
                         </div>
                         <div class="p-3 d-flex">
-                            <div class="dropup export-btn-holder mx-1">
-                                <button class="btn btn-sm btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa fa-save"></i> Export
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <?php $export_print_link = $this->set_current_page_link(array('format' => 'print')); ?>
-                                    <a class="dropdown-item export-link-btn" data-format="print" href="<?php print_link($export_print_link); ?>" target="_blank">
-                                        <img src="<?php print_link('assets/images/print.png') ?>" class="mr-2" /> PRINT
-                                        </a>
-                                        <?php $export_pdf_link = $this->set_current_page_link(array('format' => 'pdf')); ?>
-                                        <a class="dropdown-item export-link-btn" data-format="pdf" href="<?php print_link($export_pdf_link); ?>" target="_blank">
-                                            <img src="<?php print_link('assets/images/pdf.png') ?>" class="mr-2" /> PDF
-                                            </a>
-                                            <?php $export_word_link = $this->set_current_page_link(array('format' => 'word')); ?>
-                                            <a class="dropdown-item export-link-btn" data-format="word" href="<?php print_link($export_word_link); ?>" target="_blank">
-                                                <img src="<?php print_link('assets/images/doc.png') ?>" class="mr-2" /> WORD
-                                                </a>
-                                                <?php $export_csv_link = $this->set_current_page_link(array('format' => 'csv')); ?>
-                                                <a class="dropdown-item export-link-btn" data-format="csv" href="<?php print_link($export_csv_link); ?>" target="_blank">
-                                                    <img src="<?php print_link('assets/images/csv.png') ?>" class="mr-2" /> CSV
-                                                    </a>
-                                                    <?php $export_excel_link = $this->set_current_page_link(array('format' => 'excel')); ?>
-                                                    <a class="dropdown-item export-link-btn" data-format="excel" href="<?php print_link($export_excel_link); ?>" target="_blank">
-                                                        <img src="<?php print_link('assets/images/xsl.png') ?>" class="mr-2" /> EXCEL
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <a class="btn btn-sm btn-info"  href="<?php print_link("notes/edit/$rec_id"); ?>">
-                                                    <i class="fa fa-edit"></i> Edit
-                                                </a>
-                                                <a class="btn btn-sm btn-danger record-delete-btn mx-1"  href="<?php print_link("notes/delete/$rec_id/?csrf_token=$csrf_token&redirect=$current_page"); ?>" data-prompt-msg="Are you sure you want to delete this record?" data-display-style="modal">
-                                                    <i class="fa fa-times"></i> Delete
-                                                </a>
-                                            </div>
-                                            <?php
-                                            }
-                                            else{
-                                            ?>
-                                            <!-- Empty Record Message -->
-                                            <div class="text-muted p-3">
-                                                <i class="fa fa-ban"></i> No Record Found
-                                            </div>
-                                            <?php
-                                            }
-                                            ?>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a class="btn btn-sm btn-info"  href="<?php print_link("notes/edit/$rec_id"); ?>">
+                                <i class="fa fa-edit"></i> Edit
+                            </a>
+                            <a class="btn btn-sm btn-danger record-delete-btn mx-1"  href="<?php print_link("notes/delete/$rec_id/?csrf_token=$csrf_token&redirect=$current_page"); ?>" data-prompt-msg="Are you sure you want to delete this record?" data-display-style="modal">
+                                <i class="fa fa-times"></i> Delete
+                            </a>
                         </div>
-                    </section>
+                        <?php
+                        }
+                        else{
+                        ?>
+                        <!-- Empty Record Message -->
+                        <div class="text-muted p-3">
+                            <i class="fa fa-ban"></i> No Record Found
+                        </div>
+                        <?php
+                        }
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

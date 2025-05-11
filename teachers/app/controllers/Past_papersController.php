@@ -3,7 +3,7 @@
  * Past_papers Page Controller
  * @category  Controller
  */
-class Past_papersController extends BaseController{
+class Past_papersController extends SecureController{
 	function __construct(){
 		parent::__construct();
 		$this->tablename = "past_papers";
@@ -18,18 +18,15 @@ class Past_papersController extends BaseController{
 		$request = $this->request;
 		$db = $this->GetModel();
 		$tablename = $this->tablename;
-		$fields = array("id", 
-			"subject", 
-			"academic_year", 
-			"term", 
-			"resource_name", 
-			"level", 
-			"views", 
-			"uploaded_by", 
-			"document", 
-			"date_created", 
-			"date_updated", 
-			"paper_type");
+		$fields = array("past_papers.id", 
+			"exam_types.exam_type AS exam_types_exam_type", 
+			"subjects.subject AS subjects_subject", 
+			"past_papers.exam_year", 
+			"academic_terms.term_name AS academic_terms_term_name", 
+			"past_papers.level", 
+			"paper_types.paper_type AS paper_types_paper_type", 
+			"past_papers.document", 
+			"past_papers.views");
 		$pagination = $this->get_pagination(MAX_RECORD_COUNT); // get current pagination e.g array(page_number, page_limit)
 		//search table record
 		if(!empty($request->search)){
@@ -37,25 +34,45 @@ class Past_papersController extends BaseController{
 			$search_condition = "(
 				past_papers.id LIKE ? OR 
 				past_papers.subject LIKE ? OR 
-				past_papers.academic_year LIKE ? OR 
+				past_papers.exam_type LIKE ? OR 
+				exam_types.exam_type LIKE ? OR 
+				subjects.subject LIKE ? OR 
+				past_papers.exam_year LIKE ? OR 
+				academic_terms.term_name LIKE ? OR 
 				past_papers.term LIKE ? OR 
-				past_papers.resource_name LIKE ? OR 
 				past_papers.level LIKE ? OR 
-				past_papers.views LIKE ? OR 
-				past_papers.uploaded_by LIKE ? OR 
+				past_papers.paper_type LIKE ? OR 
+				paper_types.paper_type LIKE ? OR 
 				past_papers.document LIKE ? OR 
+				past_papers.uploaded_by LIKE ? OR 
+				past_papers.views LIKE ? OR 
 				past_papers.date_created LIKE ? OR 
 				past_papers.date_updated LIKE ? OR 
-				past_papers.paper_type LIKE ?
+				exam_types.id LIKE ? OR 
+				exam_types.date_created LIKE ? OR 
+				exam_types.date_updated LIKE ? OR 
+				subjects.id LIKE ? OR 
+				subjects.code LIKE ? OR 
+				subjects.date_created LIKE ? OR 
+				subjects.date_updated LIKE ? OR 
+				subjects.subject_group LIKE ? OR 
+				paper_types.id LIKE ? OR 
+				paper_types.date_created LIKE ? OR 
+				paper_types.date_updated LIKE ? OR 
+				academic_terms.id LIKE ?
 			)";
 			$search_params = array(
-				"%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%"
+				"%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%","%$text%"
 			);
 			//setting search conditions
 			$db->where($search_condition, $search_params);
 			 //template to use when ajax search
 			$this->view->search_template = "past_papers/search.php";
 		}
+		$db->join("exam_types", "past_papers.exam_type = exam_types.id", "INNER");
+		$db->join("subjects", "past_papers.subject = subjects.code", "INNER");
+		$db->join("paper_types", "past_papers.paper_type = paper_types.id", "INNER");
+		$db->join("academic_terms", "past_papers.term = academic_terms.id", "INNER");
 		if(!empty($request->orderby)){
 			$orderby = $request->orderby;
 			$ordertype = (!empty($request->ordertype) ? $request->ordertype : ORDER_TYPE);
@@ -100,32 +117,32 @@ class Past_papersController extends BaseController{
 		$db = $this->GetModel();
 		$rec_id = $this->rec_id = urldecode($rec_id);
 		$tablename = $this->tablename;
-		$fields = array("id", 
-			"subject", 
-			"academic_year", 
-			"term", 
-			"resource_name", 
-			"level", 
-			"views", 
-			"uploaded_by", 
-			"document", 
-			"date_created", 
-			"date_updated", 
-			"paper_type");
+		$fields = array("past_papers.id", 
+			"exam_types.exam_type AS exam_types_exam_type", 
+			"subjects.subject AS subjects_subject", 
+			"past_papers.exam_year", 
+			"academic_terms.term_name AS academic_terms_term_name", 
+			"past_papers.level", 
+			"paper_types.paper_type AS paper_types_paper_type", 
+			"past_papers.document", 
+			"past_papers.uploaded_by", 
+			"past_papers.views", 
+			"past_papers.date_created");
 		if($value){
 			$db->where($rec_id, urldecode($value)); //select record based on field name
 		}
 		else{
 			$db->where("past_papers.id", $rec_id);; //select record based on primary key
 		}
+		$db->join("exam_types", "past_papers.exam_type = exam_types.id", "INNER ");
+		$db->join("subjects", "past_papers.subject = subjects.code", "INNER ");
+		$db->join("paper_types", "past_papers.paper_type = paper_types.id", "INNER ");
+		$db->join("academic_terms", "past_papers.term = academic_terms.id", "INNER ");  
 		$record = $db->getOne($tablename, $fields );
 		if($record){
-			$page_title = $this->view->page_title = "View  Past Papers";
-		$this->view->report_filename = date('Y-m-d') . '-' . $page_title;
-		$this->view->report_title = $page_title;
-		$this->view->report_layout = "report_layout.php";
-		$this->view->report_paper_size = "A4";
-		$this->view->report_orientation = "portrait";
+			$this->write_to_log("view", "true");
+			$record['date_created'] = human_datetime($record['date_created']);
+			$page_title = $this->view->page_title = "Past Paper Details";
 		}
 		else{
 			if($db->getLastError()){
@@ -148,37 +165,37 @@ class Past_papersController extends BaseController{
 			$tablename = $this->tablename;
 			$request = $this->request;
 			//fillable fields
-			$fields = $this->fields = array("subject","academic_year","term","resource_name","level","views","uploaded_by","document","paper_type");
+			$fields = $this->fields = array("exam_type","subject","exam_year","term","level","paper_type","document");
 			$postdata = $this->format_request_data($formdata);
 			$this->rules_array = array(
+				'exam_type' => 'required',
 				'subject' => 'required',
-				'academic_year' => 'required',
+				'exam_year' => 'required',
 				'term' => 'required',
-				'resource_name' => 'required',
 				'level' => 'required',
-				'views' => 'required',
-				'uploaded_by' => 'required',
-				'document' => 'required',
 				'paper_type' => 'required',
+				'document' => 'required',
 			);
 			$this->sanitize_array = array(
+				'exam_type' => 'sanitize_string',
 				'subject' => 'sanitize_string',
-				'academic_year' => 'sanitize_string',
+				'exam_year' => 'sanitize_string',
 				'term' => 'sanitize_string',
-				'resource_name' => 'sanitize_string',
 				'level' => 'sanitize_string',
-				'views' => 'sanitize_string',
-				'uploaded_by' => 'sanitize_string',
-				'document' => 'sanitize_string',
 				'paper_type' => 'sanitize_string',
+				'document' => 'sanitize_string',
 			);
 			$this->filter_vals = true; //set whether to remove empty fields
 			$modeldata = $this->modeldata = $this->validate_form($postdata);
-			$modeldata['date_created'] = datetime_now();
 			if($this->validated()){
 				$rec_id = $this->rec_id = $db->insert($tablename, $modeldata);
 				if($rec_id){
-					$this->set_flash_msg("Record added successfully", "success");
+					$this->write_to_log("add", "true");
+		# Statement to execute after adding record
+		$USER_ID = get_active_user('id');
+$db->rawQuery("UPDATE past_papers SET uploaded_by = $USER_ID  WHERE id='$rec_id'");
+		# End of after add statement
+					$this->set_flash_msg("Past paper added successfully", "success");
 					return	$this->redirect("past_papers");
 				}
 				else{
@@ -201,39 +218,35 @@ class Past_papersController extends BaseController{
 		$this->rec_id = $rec_id;
 		$tablename = $this->tablename;
 		 //editable fields
-		$fields = $this->fields = array("id","subject","academic_year","term","resource_name","level","views","uploaded_by","document","paper_type");
+		$fields = $this->fields = array("id","exam_type","subject","exam_year","term","level","paper_type","document");
 		if($formdata){
 			$postdata = $this->format_request_data($formdata);
 			$this->rules_array = array(
+				'exam_type' => 'required',
 				'subject' => 'required',
-				'academic_year' => 'required',
+				'exam_year' => 'required',
 				'term' => 'required',
-				'resource_name' => 'required',
 				'level' => 'required',
-				'views' => 'required',
-				'uploaded_by' => 'required',
-				'document' => 'required',
 				'paper_type' => 'required',
+				'document' => 'required',
 			);
 			$this->sanitize_array = array(
+				'exam_type' => 'sanitize_string',
 				'subject' => 'sanitize_string',
-				'academic_year' => 'sanitize_string',
+				'exam_year' => 'sanitize_string',
 				'term' => 'sanitize_string',
-				'resource_name' => 'sanitize_string',
 				'level' => 'sanitize_string',
-				'views' => 'sanitize_string',
-				'uploaded_by' => 'sanitize_string',
-				'document' => 'sanitize_string',
 				'paper_type' => 'sanitize_string',
+				'document' => 'sanitize_string',
 			);
 			$modeldata = $this->modeldata = $this->validate_form($postdata);
-			$modeldata['date_updated'] = datetime_now();
 			if($this->validated()){
 				$db->where("past_papers.id", $rec_id);;
 				$bool = $db->update($tablename, $modeldata);
 				$numRows = $db->getRowCount(); //number of affected rows. 0 = no record field updated
 				if($bool && $numRows){
-					$this->set_flash_msg("Record updated successfully", "success");
+					$this->write_to_log("edit", "true");
+					$this->set_flash_msg("Past paper updated successfully", "success");
 					return $this->redirect("past_papers");
 				}
 				else{
@@ -259,78 +272,6 @@ class Past_papersController extends BaseController{
 		return $this->render_view("past_papers/edit.php", $data);
 	}
 	/**
-     * Update single field
-	 * @param $rec_id (select record by table primary key)
-	 * @param $formdata array() from $_POST
-     * @return array
-     */
-	function editfield($rec_id = null, $formdata = null){
-		$db = $this->GetModel();
-		$this->rec_id = $rec_id;
-		$tablename = $this->tablename;
-		//editable fields
-		$fields = $this->fields = array("id","subject","academic_year","term","resource_name","level","views","uploaded_by","document","paper_type");
-		$page_error = null;
-		if($formdata){
-			$postdata = array();
-			$fieldname = $formdata['name'];
-			$fieldvalue = $formdata['value'];
-			$postdata[$fieldname] = $fieldvalue;
-			$postdata = $this->format_request_data($postdata);
-			$this->rules_array = array(
-				'subject' => 'required',
-				'academic_year' => 'required',
-				'term' => 'required',
-				'resource_name' => 'required',
-				'level' => 'required',
-				'views' => 'required',
-				'uploaded_by' => 'required',
-				'document' => 'required',
-				'paper_type' => 'required',
-			);
-			$this->sanitize_array = array(
-				'subject' => 'sanitize_string',
-				'academic_year' => 'sanitize_string',
-				'term' => 'sanitize_string',
-				'resource_name' => 'sanitize_string',
-				'level' => 'sanitize_string',
-				'views' => 'sanitize_string',
-				'uploaded_by' => 'sanitize_string',
-				'document' => 'sanitize_string',
-				'paper_type' => 'sanitize_string',
-			);
-			$this->filter_rules = true; //filter validation rules by excluding fields not in the formdata
-			$modeldata = $this->modeldata = $this->validate_form($postdata);
-			$modeldata['date_updated'] = datetime_now();
-			if($this->validated()){
-				$db->where("past_papers.id", $rec_id);;
-				$bool = $db->update($tablename, $modeldata);
-				$numRows = $db->getRowCount();
-				if($bool && $numRows){
-					return render_json(
-						array(
-							'num_rows' =>$numRows,
-							'rec_id' =>$rec_id,
-						)
-					);
-				}
-				else{
-					if($db->getLastError()){
-						$page_error = $db->getLastError();
-					}
-					elseif(!$numRows){
-						$page_error = "No record updated";
-					}
-					render_error($page_error);
-				}
-			}
-			else{
-				render_error($this->view->page_error);
-			}
-		}
-		return null;
-	}
-	/**
      * Delete record from the database
 	 * Support multi delete by separating record id by comma.
      * @return BaseView
@@ -346,6 +287,7 @@ class Past_papersController extends BaseController{
 		$db->where("past_papers.id", $arr_rec_id, "in");
 		$bool = $db->delete($tablename);
 		if($bool){
+			$this->write_to_log("delete", "true");
 			$this->set_flash_msg("Record deleted successfully", "success");
 		}
 		elseif($db->getLastError()){

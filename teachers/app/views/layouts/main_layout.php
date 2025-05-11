@@ -24,16 +24,24 @@
 			Html ::  page_css('blueimp-gallery.css');
 		?>
 				<?php 
-			Html ::  page_css('bootstrap-theme-simplex-mini.css');
+			Html ::  page_css('bootstrap-theme-simlex-teal-white.css');
 			Html ::  page_css('custom-style.css');
 		?>
 		<?php
+			Html ::  page_css('flatpickr.min.css');
 			Html ::  page_css('bootstrap-editable.css');
 			Html ::  page_css('dropzone.min.css');
 			Html ::  page_js('jquery-3.3.1.min.js');
+			Html::page_js('chartjs-2.3.0.js');
 		?>
 	</head>
-	<body id="main" class="<?php echo $body_class ?>">
+	<?php 
+		$page_id = "index";
+		if(user_login_status() == true){
+			$page_id = "main";
+		}
+	?>
+	<body id="<?php echo $page_id ?>" class="with-login <?php echo $body_class ?>">
 		<div id="page-wrapper">
 			<!-- Show progress bar when ajax upload-->
 			<div class="progress ajax-progress-bar">
@@ -125,6 +133,7 @@
 			Html ::  page_js('bootstrap-4.3.1.min.js');
 		?>
 		<?php
+			Html ::  page_js('flatpickr.min.js');
 			Html ::  page_js('bootstrap-editable.js');
 			Html ::  page_js('dropzone.min.js');
 			Html ::  page_js('plugins.js'); //boostrapswitch, passwordStrength, twbs-pagination, blueimp-gallery,

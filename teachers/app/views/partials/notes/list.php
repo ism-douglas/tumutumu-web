@@ -23,7 +23,7 @@ $show_pagination = $this->show_pagination;
         <div class="container-fluid">
             <div class="row ">
                 <div class="col ">
-                    <h4 class="record-title">Students' Notes</h4>
+                    <h4 class="record-title">Notes</h4>
                 </div>
                 <div class="col-sm-3 ">
                     <a  class="btn btn btn-primary my-1" href="<?php print_link("notes/add") ?>">
@@ -109,10 +109,8 @@ $show_pagination = $this->show_pagination;
                                             <tr>
                                                 <th class="td-sno">#</th>
                                                 <th  class="td-id"> Notes ID</th>
-                                                <th  class="td-topic"> Topic</th>
-                                                <th  class="td-subject"> Subject</th>
+                                                <th  class="td-subjects_subject"> Subject</th>
                                                 <th  class="td-level"> Level</th>
-                                                <th  class="td-uploaded_by"> Uploaded By</th>
                                                 <th  class="td-document"> Document</th>
                                                 <th  class="td-views"> Views</th>
                                                 <th class="td-btn"></th>
@@ -132,12 +130,15 @@ $show_pagination = $this->show_pagination;
                                             <tr>
                                                 <th class="td-sno"><?php echo $counter; ?></th>
                                                 <td class="td-id"><a href="<?php print_link("notes/view/$data[id]") ?>"><?php echo $data['id']; ?></a></td>
-                                                <td class="td-topic"><a href="<?php print_link("notes/view/$data[id]") ?>"><?php echo $data['topic']; ?></a></td>
-                                                <td class="td-subject"> <?php echo $data['subject']; ?></td>
+                                                <td class="td-subjects_subject"> <?php echo $data['subjects_subject']; ?></td>
                                                 <td class="td-level"> <?php echo $data['level']; ?></td>
-                                                <td class="td-uploaded_by"> <?php echo $data['uploaded_by']; ?></td>
                                                 <td class="td-document"><?php Html :: page_link_file($data['document']); ?></td>
                                                 <td class="td-views"> <?php echo $data['views']; ?></td>
+                                                <th class="td-btn">
+                                                    <a class="btn btn-sm btn-success has-tooltip" title="View Record" href="<?php print_link("notes/view/$rec_id"); ?>">
+                                                        <i class="fa fa-eye"></i> View
+                                                    </a>
+                                                </th>
                                             </tr>
                                             <?php 
                                             }

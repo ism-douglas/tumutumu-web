@@ -26,10 +26,6 @@ $show_pagination = $this->show_pagination;
                     <h4 class="record-title">Exam Types</h4>
                 </div>
                 <div class="col-sm-3 ">
-                    <a  class="btn btn btn-primary my-1" href="<?php print_link("exam_types/add") ?>">
-                        <i class="fa fa-plus"></i>                              
-                        Add New Exam Types 
-                    </a>
                 </div>
                 <div class="col-sm-4 ">
                     <form  class="search" action="<?php print_link('exam_types'); ?>" method="get">
@@ -107,18 +103,8 @@ $show_pagination = $this->show_pagination;
                                     <table class="table  table-striped table-sm text-left">
                                         <thead class="table-header bg-light">
                                             <tr>
-                                                <th class="td-checkbox">
-                                                    <label class="custom-control custom-checkbox custom-control-inline">
-                                                        <input class="toggle-check-all custom-control-input" type="checkbox" />
-                                                        <span class="custom-control-label"></span>
-                                                    </label>
-                                                </th>
                                                 <th class="td-sno">#</th>
-                                                <th  class="td-id"> Id</th>
                                                 <th  class="td-exam_type"> Exam Type</th>
-                                                <th  class="td-date_created"> Date Created</th>
-                                                <th  class="td-date_updated"> Date Updated</th>
-                                                <th class="td-btn"></th>
                                             </tr>
                                         </thead>
                                         <?php
@@ -133,127 +119,62 @@ $show_pagination = $this->show_pagination;
                                             $counter++;
                                             ?>
                                             <tr>
-                                                <th class=" td-checkbox">
-                                                    <label class="custom-control custom-checkbox custom-control-inline">
-                                                        <input class="optioncheck custom-control-input" name="optioncheck[]" value="<?php echo $data['id'] ?>" type="checkbox" />
-                                                            <span class="custom-control-label"></span>
-                                                        </label>
-                                                    </th>
-                                                    <th class="td-sno"><?php echo $counter; ?></th>
-                                                    <td class="td-id"><a href="<?php print_link("exam_types/view/$data[id]") ?>"><?php echo $data['id']; ?></a></td>
-                                                    <td class="td-exam_type">
-                                                        <span  data-value="<?php echo $data['exam_type']; ?>" 
-                                                            data-pk="<?php echo $data['id'] ?>" 
-                                                            data-url="<?php print_link("exam_types/editfield/" . urlencode($data['id'])); ?>" 
-                                                            data-name="exam_type" 
-                                                            data-title="Enter Exam Type" 
-                                                            data-placement="left" 
-                                                            data-toggle="click" 
-                                                            data-type="text" 
-                                                            data-mode="popover" 
-                                                            data-showbuttons="left" 
-                                                            class="is-editable" >
-                                                            <?php echo $data['exam_type']; ?> 
-                                                        </span>
-                                                    </td>
-                                                    <td class="td-date_created"> <?php echo $data['date_created']; ?></td>
-                                                    <td class="td-date_updated"> <?php echo $data['date_updated']; ?></td>
-                                                    <th class="td-btn">
-                                                        <a class="btn btn-sm btn-success has-tooltip" title="View Record" href="<?php print_link("exam_types/view/$rec_id"); ?>">
-                                                            <i class="fa fa-eye"></i> View
-                                                        </a>
-                                                        <a class="btn btn-sm btn-info has-tooltip" title="Edit This Record" href="<?php print_link("exam_types/edit/$rec_id"); ?>">
-                                                            <i class="fa fa-edit"></i> Edit
-                                                        </a>
-                                                        <a class="btn btn-sm btn-danger has-tooltip record-delete-btn" title="Delete this record" href="<?php print_link("exam_types/delete/$rec_id/?csrf_token=$csrf_token&redirect=$current_page"); ?>" data-prompt-msg="Are you sure you want to delete this record?" data-display-style="modal">
-                                                            <i class="fa fa-times"></i>
-                                                            Delete
-                                                        </a>
-                                                    </th>
-                                                </tr>
-                                                <?php 
-                                                }
-                                                ?>
-                                                <!--endrecord-->
-                                            </tbody>
-                                            <tbody class="search-data" id="search-data-<?php echo $page_element_id; ?>"></tbody>
-                                            <?php
+                                                <th class="td-sno"><?php echo $counter; ?></th>
+                                                <td class="td-exam_type"> <?php echo $data['exam_type']; ?></td>
+                                            </tr>
+                                            <?php 
                                             }
                                             ?>
-                                        </table>
-                                        <?php 
-                                        if(empty($records)){
-                                        ?>
-                                        <h4 class="bg-light text-center border-top text-muted animated bounce  p-3">
-                                            <i class="fa fa-ban"></i> No record found
-                                        </h4>
+                                            <!--endrecord-->
+                                        </tbody>
+                                        <tbody class="search-data" id="search-data-<?php echo $page_element_id; ?>"></tbody>
                                         <?php
                                         }
                                         ?>
-                                    </div>
-                                    <?php
-                                    if( $show_footer && !empty($records)){
+                                    </table>
+                                    <?php 
+                                    if(empty($records)){
                                     ?>
-                                    <div class=" border-top mt-2">
-                                        <div class="row justify-content-center">    
-                                            <div class="col-md-auto justify-content-center">    
-                                                <div class="p-3 d-flex justify-content-between">    
-                                                    <button data-prompt-msg="Are you sure you want to delete these records?" data-display-style="modal" data-url="<?php print_link("exam_types/delete/{sel_ids}/?csrf_token=$csrf_token&redirect=$current_page"); ?>" class="btn btn-sm btn-danger btn-delete-selected d-none">
-                                                        <i class="fa fa-times"></i> Delete Selected
-                                                    </button>
-                                                    <div class="dropup export-btn-holder mx-1">
-                                                        <button class="btn btn-sm btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <i class="fa fa-save"></i> Export
-                                                        </button>
-                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                            <?php $export_print_link = $this->set_current_page_link(array('format' => 'print')); ?>
-                                                            <a class="dropdown-item export-link-btn" data-format="print" href="<?php print_link($export_print_link); ?>" target="_blank">
-                                                                <img src="<?php print_link('assets/images/print.png') ?>" class="mr-2" /> PRINT
-                                                                </a>
-                                                                <?php $export_pdf_link = $this->set_current_page_link(array('format' => 'pdf')); ?>
-                                                                <a class="dropdown-item export-link-btn" data-format="pdf" href="<?php print_link($export_pdf_link); ?>" target="_blank">
-                                                                    <img src="<?php print_link('assets/images/pdf.png') ?>" class="mr-2" /> PDF
-                                                                    </a>
-                                                                    <?php $export_word_link = $this->set_current_page_link(array('format' => 'word')); ?>
-                                                                    <a class="dropdown-item export-link-btn" data-format="word" href="<?php print_link($export_word_link); ?>" target="_blank">
-                                                                        <img src="<?php print_link('assets/images/doc.png') ?>" class="mr-2" /> WORD
-                                                                        </a>
-                                                                        <?php $export_csv_link = $this->set_current_page_link(array('format' => 'csv')); ?>
-                                                                        <a class="dropdown-item export-link-btn" data-format="csv" href="<?php print_link($export_csv_link); ?>" target="_blank">
-                                                                            <img src="<?php print_link('assets/images/csv.png') ?>" class="mr-2" /> CSV
-                                                                            </a>
-                                                                            <?php $export_excel_link = $this->set_current_page_link(array('format' => 'excel')); ?>
-                                                                            <a class="dropdown-item export-link-btn" data-format="excel" href="<?php print_link($export_excel_link); ?>" target="_blank">
-                                                                                <img src="<?php print_link('assets/images/xsl.png') ?>" class="mr-2" /> EXCEL
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col">   
-                                                                    <?php
-                                                                    if($show_pagination == true){
-                                                                    $pager = new Pagination($total_records, $record_count);
-                                                                    $pager->route = $this->route;
-                                                                    $pager->show_page_count = true;
-                                                                    $pager->show_record_count = true;
-                                                                    $pager->show_page_limit =true;
-                                                                    $pager->limit_count = $this->limit_count;
-                                                                    $pager->show_page_number_list = true;
-                                                                    $pager->pager_link_range=5;
-                                                                    $pager->render();
-                                                                    }
-                                                                    ?>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <?php
-                                                        }
-                                                        ?>
-                                                    </div>
-                                                </div>
+                                    <h4 class="bg-light text-center border-top text-muted animated bounce  p-3">
+                                        <i class="fa fa-ban"></i> No record found
+                                    </h4>
+                                    <?php
+                                    }
+                                    ?>
+                                </div>
+                                <?php
+                                if( $show_footer && !empty($records)){
+                                ?>
+                                <div class=" border-top mt-2">
+                                    <div class="row justify-content-center">    
+                                        <div class="col-md-auto justify-content-center">    
+                                            <div class="p-3 d-flex justify-content-between">    
                                             </div>
+                                        </div>
+                                        <div class="col">   
+                                            <?php
+                                            if($show_pagination == true){
+                                            $pager = new Pagination($total_records, $record_count);
+                                            $pager->route = $this->route;
+                                            $pager->show_page_count = true;
+                                            $pager->show_record_count = true;
+                                            $pager->show_page_limit =true;
+                                            $pager->limit_count = $this->limit_count;
+                                            $pager->show_page_number_list = true;
+                                            $pager->pager_link_range=5;
+                                            $pager->render();
+                                            }
+                                            ?>
                                         </div>
                                     </div>
                                 </div>
-                            </section>
+                                <?php
+                                }
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

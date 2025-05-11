@@ -3,7 +3,7 @@
  * Students Page Controller
  * @category  Controller
  */
-class StudentsController extends BaseController{
+class StudentsController extends SecureController{
 	function __construct(){
 		parent::__construct();
 		$this->tablename = "students";
@@ -19,7 +19,7 @@ class StudentsController extends BaseController{
 		$this->rec_id = $rec_id;
 		$tablename = $this->tablename;
 		//editable fields
-		$fields = $this->fields = array("id","adm_no","full_name","level","stream","kcpe","uploaded_by","password");
+		$fields = $this->fields = array("id","adm_no","full_name","level","stream","kcpe","uploaded_by","password","date_created","date_updated");
 		$page_error = null;
 		if($formdata){
 			$postdata = array();
@@ -35,6 +35,8 @@ class StudentsController extends BaseController{
 				'kcpe' => 'required',
 				'uploaded_by' => 'required',
 				'password' => 'required',
+				'date_created' => 'required',
+				'date_updated' => 'required',
 			);
 			$this->sanitize_array = array(
 				'adm_no' => 'sanitize_string',
@@ -44,15 +46,17 @@ class StudentsController extends BaseController{
 				'kcpe' => 'sanitize_string',
 				'uploaded_by' => 'sanitize_string',
 				'password' => 'sanitize_string',
+				'date_created' => 'sanitize_string',
+				'date_updated' => 'sanitize_string',
 			);
 			$this->filter_rules = true; //filter validation rules by excluding fields not in the formdata
 			$modeldata = $this->modeldata = $this->validate_form($postdata);
-			$modeldata['date_updated'] = datetime_now();
 			if($this->validated()){
 				$db->where("students.id", $rec_id);;
 				$bool = $db->update($tablename, $modeldata);
 				$numRows = $db->getRowCount();
 				if($bool && $numRows){
+					$this->write_to_log("edit", "true");
 					return render_json(
 						array(
 							'num_rows' =>$numRows,

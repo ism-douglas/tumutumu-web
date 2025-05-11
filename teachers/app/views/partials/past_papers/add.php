@@ -34,123 +34,206 @@ $redirect_to = $this->redirect_to;
                                 <div class="form-group ">
                                     <div class="row">
                                         <div class="col-sm-4">
+                                            <label class="control-label" for="exam_type">Exam Type <span class="text-danger">*</span></label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="">
+                                                <select required=""  id="ctrl-exam_type" name="exam_type"  placeholder="Select exam type ..."    class="custom-select" >
+                                                    <option value="">Select exam type ...</option>
+                                                    <?php 
+                                                    $exam_type_options = $comp_model -> past_papers_exam_type_option_list();
+                                                    if(!empty($exam_type_options)){
+                                                    foreach($exam_type_options as $option){
+                                                    $value = (!empty($option['value']) ? $option['value'] : null);
+                                                    $label = (!empty($option['label']) ? $option['label'] : $value);
+                                                    $selected = $this->set_field_selected('exam_type',$value, "");
+                                                    ?>
+                                                    <option <?php echo $selected; ?> value="<?php echo $value; ?>">
+                                                        <?php echo $label; ?>
+                                                    </option>
+                                                    <?php
+                                                    }
+                                                    }
+                                                    ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <div class="row">
+                                        <div class="col-sm-4">
                                             <label class="control-label" for="subject">Subject <span class="text-danger">*</span></label>
                                         </div>
                                         <div class="col-sm-8">
                                             <div class="">
-                                                <input id="ctrl-subject"  value="<?php  echo $this->set_field_value('subject',""); ?>" type="text" placeholder="Enter Subject"  required="" name="subject"  class="form-control " />
-                                                </div>
+                                                <select required=""  id="ctrl-subject" name="subject"  placeholder="Specify subject ..."    class="custom-select" >
+                                                    <option value="">Specify subject ...</option>
+                                                    <?php 
+                                                    $subject_options = $comp_model -> past_papers_subject_option_list();
+                                                    if(!empty($subject_options)){
+                                                    foreach($subject_options as $option){
+                                                    $value = (!empty($option['value']) ? $option['value'] : null);
+                                                    $label = (!empty($option['label']) ? $option['label'] : $value);
+                                                    $selected = $this->set_field_selected('subject',$value, "");
+                                                    ?>
+                                                    <option <?php echo $selected; ?> value="<?php echo $value; ?>">
+                                                        <?php echo $label; ?>
+                                                    </option>
+                                                    <?php
+                                                    }
+                                                    }
+                                                    ?>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-group ">
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <label class="control-label" for="academic_year">Academic Year <span class="text-danger">*</span></label>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <div class="">
-                                                    <input id="ctrl-academic_year"  value="<?php  echo $this->set_field_value('academic_year',""); ?>" type="text" placeholder="Enter Academic Year"  required="" name="academic_year"  class="form-control " />
-                                                    </div>
-                                                </div>
+                                </div>
+                                <div class="form-group ">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label class="control-label" for="exam_year">Exam Year <span class="text-danger">*</span></label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="">
+                                                <select required=""  id="ctrl-exam_year" name="exam_year"  placeholder="Select academic year ..."    class="custom-select" >
+                                                    <option value="">Select academic year ...</option>
+                                                    <?php 
+                                                    $exam_year_options = $comp_model -> past_papers_exam_year_option_list();
+                                                    if(!empty($exam_year_options)){
+                                                    foreach($exam_year_options as $option){
+                                                    $value = (!empty($option['value']) ? $option['value'] : null);
+                                                    $label = (!empty($option['label']) ? $option['label'] : $value);
+                                                    $selected = $this->set_field_selected('exam_year',$value, "");
+                                                    ?>
+                                                    <option <?php echo $selected; ?> value="<?php echo $value; ?>">
+                                                        <?php echo $label; ?>
+                                                    </option>
+                                                    <?php
+                                                    }
+                                                    }
+                                                    ?>
+                                                </select>
                                             </div>
                                         </div>
-                                        <div class="form-group ">
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <label class="control-label" for="term">Term <span class="text-danger">*</span></label>
-                                                </div>
-                                                <div class="col-sm-8">
-                                                    <div class="">
-                                                        <input id="ctrl-term"  value="<?php  echo $this->set_field_value('term',""); ?>" type="text" placeholder="Enter Term"  required="" name="term"  class="form-control " />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group ">
-                                                <div class="row">
-                                                    <div class="col-sm-4">
-                                                        <label class="control-label" for="resource_name">Resource Name <span class="text-danger">*</span></label>
-                                                    </div>
-                                                    <div class="col-sm-8">
-                                                        <div class="">
-                                                            <input id="ctrl-resource_name"  value="<?php  echo $this->set_field_value('resource_name',""); ?>" type="text" placeholder="Enter Resource Name"  required="" name="resource_name"  class="form-control " />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group ">
-                                                    <div class="row">
-                                                        <div class="col-sm-4">
-                                                            <label class="control-label" for="level">Level <span class="text-danger">*</span></label>
-                                                        </div>
-                                                        <div class="col-sm-8">
-                                                            <div class="">
-                                                                <input id="ctrl-level"  value="<?php  echo $this->set_field_value('level',""); ?>" type="text" placeholder="Enter Level"  required="" name="level"  class="form-control " />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group ">
-                                                        <div class="row">
-                                                            <div class="col-sm-4">
-                                                                <label class="control-label" for="views">Views <span class="text-danger">*</span></label>
-                                                            </div>
-                                                            <div class="col-sm-8">
-                                                                <div class="">
-                                                                    <input id="ctrl-views"  value="<?php  echo $this->set_field_value('views',""); ?>" type="text" placeholder="Enter Views"  required="" name="views"  class="form-control " />
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group ">
-                                                            <div class="row">
-                                                                <div class="col-sm-4">
-                                                                    <label class="control-label" for="uploaded_by">Uploaded By <span class="text-danger">*</span></label>
-                                                                </div>
-                                                                <div class="col-sm-8">
-                                                                    <div class="">
-                                                                        <input id="ctrl-uploaded_by"  value="<?php  echo $this->set_field_value('uploaded_by',""); ?>" type="text" placeholder="Enter Uploaded By"  required="" name="uploaded_by"  class="form-control " />
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group ">
-                                                                <div class="row">
-                                                                    <div class="col-sm-4">
-                                                                        <label class="control-label" for="document">Document <span class="text-danger">*</span></label>
-                                                                    </div>
-                                                                    <div class="col-sm-8">
-                                                                        <div class="">
-                                                                            <input id="ctrl-document"  value="<?php  echo $this->set_field_value('document',""); ?>" type="text" placeholder="Enter Document"  required="" name="document"  class="form-control " />
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group ">
-                                                                    <div class="row">
-                                                                        <div class="col-sm-4">
-                                                                            <label class="control-label" for="paper_type">Paper Type <span class="text-danger">*</span></label>
-                                                                        </div>
-                                                                        <div class="col-sm-8">
-                                                                            <div class="">
-                                                                                <input id="ctrl-paper_type"  value="<?php  echo $this->set_field_value('paper_type',""); ?>" type="text" placeholder="Enter Paper Type"  required="" name="paper_type"  class="form-control " />
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group form-submit-btn-holder text-center mt-3">
-                                                                    <div class="form-ajax-status"></div>
-                                                                    <button class="btn btn-primary" type="submit">
-                                                                        Submit
-                                                                        <i class="fa fa-send"></i>
-                                                                    </button>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label class="control-label" for="term">Term <span class="text-danger">*</span></label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="">
+                                                <select required=""  id="ctrl-term" name="term"  placeholder="Select academic term ..."    class="custom-select" >
+                                                    <option value="">Select academic term ...</option>
+                                                    <?php 
+                                                    $term_options = $comp_model -> past_papers_term_option_list();
+                                                    if(!empty($term_options)){
+                                                    foreach($term_options as $option){
+                                                    $value = (!empty($option['value']) ? $option['value'] : null);
+                                                    $label = (!empty($option['label']) ? $option['label'] : $value);
+                                                    $selected = $this->set_field_selected('term',$value, "");
+                                                    ?>
+                                                    <option <?php echo $selected; ?> value="<?php echo $value; ?>">
+                                                        <?php echo $label; ?>
+                                                    </option>
+                                                    <?php
+                                                    }
+                                                    }
+                                                    ?>
+                                                </select>
                                             </div>
                                         </div>
-                                    </section>
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label class="control-label" for="level">Level <span class="text-danger">*</span></label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="">
+                                                <select required=""  id="ctrl-level" name="level"  placeholder="Select a level ..."    class="custom-select" >
+                                                    <option value="">Select a level ...</option>
+                                                    <?php 
+                                                    $level_options = $comp_model -> past_papers_level_option_list();
+                                                    if(!empty($level_options)){
+                                                    foreach($level_options as $option){
+                                                    $value = (!empty($option['value']) ? $option['value'] : null);
+                                                    $label = (!empty($option['label']) ? $option['label'] : $value);
+                                                    $selected = $this->set_field_selected('level',$value, "");
+                                                    ?>
+                                                    <option <?php echo $selected; ?> value="<?php echo $value; ?>">
+                                                        <?php echo $label; ?>
+                                                    </option>
+                                                    <?php
+                                                    }
+                                                    }
+                                                    ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label class="control-label" for="paper_type">Paper Category <span class="text-danger">*</span></label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="">
+                                                <select required=""  id="ctrl-paper_type" name="paper_type"  placeholder="Select a category ..."    class="custom-select" >
+                                                    <option value="">Select a category ...</option>
+                                                    <?php 
+                                                    $paper_type_options = $comp_model -> past_papers_paper_type_option_list();
+                                                    if(!empty($paper_type_options)){
+                                                    foreach($paper_type_options as $option){
+                                                    $value = (!empty($option['value']) ? $option['value'] : null);
+                                                    $label = (!empty($option['label']) ? $option['label'] : $value);
+                                                    $selected = $this->set_field_selected('paper_type',$value, "");
+                                                    ?>
+                                                    <option <?php echo $selected; ?> value="<?php echo $value; ?>">
+                                                        <?php echo $label; ?>
+                                                    </option>
+                                                    <?php
+                                                    }
+                                                    }
+                                                    ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label class="control-label" for="document">Document <span class="text-danger">*</span></label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="">
+                                                <div class="dropzone required" input="#ctrl-document" fieldname="document"    data-multiple="false" dropmsg="Choose files or drag and drop files to upload"    btntext="Browse" filesize="15" maximum="1">
+                                                    <input name="document" id="ctrl-document" required="" class="dropzone-input form-control" value="<?php  echo $this->set_field_value('document',""); ?>" type="text"  />
+                                                        <!--<div class="invalid-feedback animated bounceIn text-center">Please a choose file</div>-->
+                                                        <div class="dz-file-limit animated bounceIn text-center text-danger"></div>
+                                                    </div>
+                                                </div>
+                                                <small class="form-text">Only PDF documents allowed</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group form-submit-btn-holder text-center mt-3">
+                                    <div class="form-ajax-status"></div>
+                                    <button class="btn btn-primary" type="submit">
+                                        Submit
+                                        <i class="fa fa-send"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

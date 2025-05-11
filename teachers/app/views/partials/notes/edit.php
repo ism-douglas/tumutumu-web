@@ -41,65 +41,102 @@ $redirect_to = $this->redirect_to;
                                         </div>
                                         <div class="col-sm-8">
                                             <div class="">
-                                                <input id="ctrl-subject"  value="<?php  echo $data['subject']; ?>" type="text" placeholder="Enter Subject"  required="" name="subject"  class="form-control " />
+                                                <select required=""  id="ctrl-subject" name="subject"  placeholder="Specify subject ..."    class="custom-select" >
+                                                    <option value="">Specify subject ...</option>
+                                                    <?php
+                                                    $rec = $data['subject'];
+                                                    $subject_options = $comp_model -> notes_subject_option_list();
+                                                    if(!empty($subject_options)){
+                                                    foreach($subject_options as $option){
+                                                    $value = (!empty($option['value']) ? $option['value'] : null);
+                                                    $label = (!empty($option['label']) ? $option['label'] : $value);
+                                                    $selected = ( $value == $rec ? 'selected' : null );
+                                                    ?>
+                                                    <option 
+                                                        <?php echo $selected; ?> value="<?php echo $value; ?>"><?php echo $label; ?>
+                                                    </option>
+                                                    <?php
+                                                    }
+                                                    }
+                                                    ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label class="control-label" for="level">Level <span class="text-danger">*</span></label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="">
+                                                <select required=""  id="ctrl-level" name="level"  placeholder="Select a level ..."    class="custom-select" >
+                                                    <option value="">Select a level ...</option>
+                                                    <?php
+                                                    $rec = $data['level'];
+                                                    $level_options = $comp_model -> notes_level_option_list();
+                                                    if(!empty($level_options)){
+                                                    foreach($level_options as $option){
+                                                    $value = (!empty($option['value']) ? $option['value'] : null);
+                                                    $label = (!empty($option['label']) ? $option['label'] : $value);
+                                                    $selected = ( $value == $rec ? 'selected' : null );
+                                                    ?>
+                                                    <option 
+                                                        <?php echo $selected; ?> value="<?php echo $value; ?>"><?php echo $label; ?>
+                                                    </option>
+                                                    <?php
+                                                    }
+                                                    }
+                                                    ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label class="control-label" for="document">Document <span class="text-danger">*</span></label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="">
+                                                <div class="dropzone required" input="#ctrl-document" fieldname="document"    data-multiple="false" dropmsg="Choose files or drag and drop files to upload"    btntext="Browse" filesize="15" maximum="1">
+                                                    <input name="document" id="ctrl-document" required="" class="dropzone-input form-control" value="<?php  echo $data['document']; ?>" type="text"  />
+                                                        <!--<div class="invalid-feedback animated bounceIn text-center">Please a choose file</div>-->
+                                                        <div class="dz-file-limit animated bounceIn text-center text-danger"></div>
+                                                    </div>
                                                 </div>
+                                                <?php Html :: uploaded_files_list($data['document'], '#ctrl-document'); ?>
+                                                <small class="form-text">Only PDF documents allowed</small>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group ">
                                         <div class="row">
                                             <div class="col-sm-4">
-                                                <label class="control-label" for="level">Level <span class="text-danger">*</span></label>
+                                                <label class="control-label" for="remarks">Remarks </label>
                                             </div>
                                             <div class="col-sm-8">
                                                 <div class="">
-                                                    <input id="ctrl-level"  value="<?php  echo $data['level']; ?>" type="text" placeholder="Enter Level"  required="" name="level"  class="form-control " />
-                                                    </div>
+                                                    <textarea placeholder="Remarks (optional)" id="ctrl-remarks"  rows="2" name="remarks" class=" form-control"><?php  echo $data['remarks']; ?></textarea>
+                                                    <!--<div class="invalid-feedback animated bounceIn text-center">Please enter text</div>-->
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group ">
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <label class="control-label" for="topic">Topic <span class="text-danger">*</span></label>
-                                                </div>
-                                                <div class="col-sm-8">
-                                                    <div class="">
-                                                        <input id="ctrl-topic"  value="<?php  echo $data['topic']; ?>" type="text" placeholder="Enter Topic"  required="" name="topic"  class="form-control " />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group ">
-                                                <div class="row">
-                                                    <div class="col-sm-4">
-                                                        <label class="control-label" for="document">Document <span class="text-danger">*</span></label>
-                                                    </div>
-                                                    <div class="col-sm-8">
-                                                        <div class="">
-                                                            <div class="dropzone required" input="#ctrl-document" fieldname="document"    data-multiple="false" dropmsg="Choose files or drag and drop files to upload"    btntext="Browse" extensions=".pdf" filesize="10" maximum="1">
-                                                                <input name="document" id="ctrl-document" required="" class="dropzone-input form-control" value="<?php  echo $data['document']; ?>" type="text"  />
-                                                                    <!--<div class="invalid-feedback animated bounceIn text-center">Please a choose file</div>-->
-                                                                    <div class="dz-file-limit animated bounceIn text-center text-danger"></div>
-                                                                </div>
-                                                            </div>
-                                                            <?php Html :: uploaded_files_list($data['document'], '#ctrl-document'); ?>
-                                                            <small class="form-text">Only PDF format allowed</small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-ajax-status"></div>
-                                            <div class="form-group text-center">
-                                                <button class="btn btn-primary" type="submit">
-                                                    Update
-                                                    <i class="fa fa-send"></i>
-                                                </button>
-                                            </div>
-                                        </form>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="form-ajax-status"></div>
+                                <div class="form-group text-center">
+                                    <button class="btn btn-primary" type="submit">
+                                        Update
+                                        <i class="fa fa-send"></i>
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                </section>
+                </div>
+            </div>
+        </div>
+    </section>

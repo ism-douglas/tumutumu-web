@@ -8,7 +8,7 @@ define("ROOT", str_replace("\\", "/", dirname(__FILE__)) . "/");
 // return the application directory name.
 define("ROOT_DIR_NAME", basename(ROOT));
 
-define("SITE_NAME", "Tumutumu Girls LMS");
+define("SITE_NAME", "Tumutumu Girls");
 
 
 // Get Site Address Dynamically
@@ -20,7 +20,7 @@ $site_addr = rtrim($site_addr, "/\\") . "/";
 // Can Be Set Manually Like "http://localhost/mysite/".
 define("SITE_ADDR", $site_addr);
 
-define("APP_ID", "075b36cda911eb738ac81c1e9aab144d");
+define("APP_ID", "5ddad81650f57fc23f9e7551f4d26f4e");
 
 // Application Default Color (Mostly Used By Mobile)
 define("META_THEME_COLOR", "#000000");
@@ -96,7 +96,7 @@ define("MAX_RECORD_COUNT", 20); //Default Max Records to Retrieve  per Page
 define("ORDER_TYPE", "DESC");  //Default Order Type
 
 // Active User Profile Details
-
-
-
-
+define('USER_ID',(isset($_SESSION[APP_ID.'user_data']) ? $_SESSION[APP_ID.'user_data']['id'] : null ));
+define('USER_NAME',(isset($_SESSION[APP_ID.'user_data']) ? $_SESSION[APP_ID.'user_data']['username'] : null ));
+define('USER_EMAIL',(isset($_SESSION[APP_ID.'user_data']) ? $_SESSION[APP_ID.'user_data']['email'] : null ));
+define('USER_PHOTO',(isset($_SESSION[APP_ID.'user_data']) ? $_SESSION[APP_ID.'user_data']['photo'] : null ));
