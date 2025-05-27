@@ -108,16 +108,15 @@
 
       <div class="hero-container">
         <video autoplay="" muted="" loop="" playsinline="" class="video-background">
-          <source src="assets/img/education/video-2.mp4" type="video/mp4">
+          <source src="assets/img/vid/landing.mp4" type="video/mp4">
         </video>
         <div class="overlay"></div>
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-7" data-aos="zoom-out" data-aos-delay="100">
               <div class="hero-content">
-                <h1>Welcome to Tumutumu Girls High School</h1>
-                <p>Our success is attributed to the well-laid-out academic programs that serve as the driving force behind the school's remarkable performance.
-                The dedication of staff, discipline of students, and strategic academic planning have created a conducive environment for excellence.</p>
+                <h1>Welcome to Tumutumu Girls' High School</h1>
+                <p>Tumutumu Girls is an institution that has stood as a beacon of hope, discipline, and academic excellence for generations. We are proud to be a center of excellence in STEM education while nurturing our students with spiritual, moral, and leadership qualities balanced with co-curricular activities, innovation, and community service.</p>
                 <div class="cta-buttons">
                   <a href="#" class="btn-primary">Contact Us</a>
                   <a href="#" class="btn-secondary">Our History</a>
@@ -188,8 +187,8 @@
               <a href="#" class="btn-register">Register</a>
             </div>
             <div class="col-md-6 col-12 col-xl-4 ticker-item">
-              <span class="date">JAN 10</span>
-              <span class="title">International Student Orientation</span>
+              <span class="date">JUN 10</span>
+              <span class="title">National YSK 2025</span>
               <a href="#" class="btn-register">Register</a>
             </div>
           </div>
@@ -206,7 +205,8 @@
         <div class="row mb-5">
           <div class="col-lg-6 pe-lg-5" data-aos="fade-right" data-aos-delay="200">
             <h2 class="display-6 fw-bold mb-4">Arise and Shine, <span>For Excellence</span></h2>
-            <p class="lead mb-4">Tumutumu Girls is fully a STEM compliant school. We are guided by the following core values: fear of God, professionalism, integrity, performance excellence, creativity and innovation, teamwork, honesty, obedience, and discipline</p>
+            <p class="lead mb-4">At Tumutumu Girls, we proudly live out our motto: "Arise and Shine for Excellence." This guiding principle inspires every member of our community to rise above mediocrity and shine brightly in all pursuits, both in and out of the classroom.
+ We are guided by the following core values: fear of God, professionalism, integrity, performance excellence, creativity and innovation, teamwork, honesty, obedience, and discipline</p>
             <div class="d-flex flex-wrap gap-4 mb-4">
               <div class="stat-box">
                 <span class="stat-number"><span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1" class="purecounter"></span>+</span>
@@ -232,10 +232,10 @@
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="image-stack">
               <div class="image-stack-item image-stack-item-top" data-aos="zoom-in" data-aos-delay="400">
-                <img src="assets/img/education/campus-4.webp" alt="Campus Life" class="img-fluid rounded-4 shadow-lg">
+                <img src="assets/img/web/admin.webp" alt="Admin Block" class="img-fluid rounded-4 shadow-lg">
               </div>
               <div class="image-stack-item image-stack-item-bottom" data-aos="zoom-in" data-aos-delay="500">
-                <img src="assets/img/education/students-2.webp" alt="Students" class="img-fluid rounded-4 shadow-lg">
+                <img src="assets/img/web/students.webp" alt="Students" class="img-fluid rounded-4 shadow-lg">
               </div>
             </div>
           </div>
