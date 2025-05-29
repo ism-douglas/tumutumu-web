@@ -301,13 +301,8 @@
                   </div>
                   <div class="col-md-8">
                     <div class="program-content">
-                      <h3>Computer Science</h3>
-                      <div class="program-highlights">
-                        <span><i class="bi bi-clock"></i> 4 Years</span>
-                        <span><i class="bi bi-people-fill"></i> 120 Credits</span>
-                        <span><i class="bi bi-calendar3"></i> Fall &amp; Spring</span>
-                      </div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                      <h3>Academic Programs</h3>
+                      <p>Tumutumu Girls High School has been performing exemplary well both in internal and external examinations. </p>
                       <a href="#" class="program-btn"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
                     </div>
                   </div>
@@ -325,13 +320,8 @@
                   </div>
                   <div class="col-md-8">
                     <div class="program-content">
-                      <h3>Business Administration</h3>
-                      <div class="program-highlights">
-                        <span><i class="bi bi-clock"></i> 3 Years</span>
-                        <span><i class="bi bi-people-fill"></i> 90 Credits</span>
-                        <span><i class="bi bi-calendar3"></i> Fall Only</span>
-                      </div>
-                      <p>Nullam sed augue a turpis bibendum cursus. Suspendisse potenti. Praesent mi diam, feugiat a tincidunt at.</p>
+                      <h3>Co-Curricular Activities</h3>                     
+                      <p>All work without play makes Jane a dull girl. Co-curricular activities are compulsory at Tumutumu Girls High School.</p>
                       <a href="#" class="program-btn"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
                     </div>
                   </div>
@@ -349,13 +339,8 @@
                   </div>
                   <div class="col-md-8">
                     <div class="program-content">
-                      <h3>Medical Sciences</h3>
-                      <div class="program-highlights">
-                        <span><i class="bi bi-clock"></i> 5 Years</span>
-                        <span><i class="bi bi-people-fill"></i> 150 Credits</span>
-                        <span><i class="bi bi-calendar3"></i> Fall Only</span>
-                      </div>
-                      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                      <h3>ICT Exposure</h3>                  
+                      <p>We strive to be a 21st Century institution; thus, our students are well equipped as far as the use of I.C.T is concerned.</p>
                       <a href="#" class="program-btn"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
                     </div>
                   </div>
@@ -373,13 +358,8 @@
                   </div>
                   <div class="col-md-8">
                     <div class="program-content">
-                      <h3>Mechanical Engineering</h3>
-                      <div class="program-highlights">
-                        <span><i class="bi bi-clock"></i> 2 Years</span>
-                        <span><i class="bi bi-people-fill"></i> 64 Credits</span>
-                        <span><i class="bi bi-calendar3"></i> Fall &amp; Spring</span>
-                      </div>
-                      <p>Praesent tincidunt, massa et porttitor imperdiet, lorem ex ultricies ipsum, a tempus metus eros.</p>
+                      <h3>Religious Activities</h3>                    
+                      <p>We are committed to producing individuals who are holistic in all aspects. We allow for freedom of worship apart from devil worship.</p>
                       <a href="#" class="program-btn"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
                     </div>
                   </div>
