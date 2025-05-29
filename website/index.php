@@ -380,7 +380,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Students Life</h2>
+        <h2>Special Programs</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
@@ -391,7 +391,7 @@
             <div class="students-life-img position-relative">
               <img src="assets/img/education/education-square-11.webp" class="img-fluid rounded-4 shadow-sm" alt="Students Life">
               <div class="img-overlay">
-                <h3>Discover Campus Life</h3>
+                <h3>Discover Student Life</h3>
                 <a href="students-life.html" class="explore-btn">Explore More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
@@ -404,46 +404,29 @@
                 <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
                   <div class="student-activity-item">
                     <div class="icon-box">
-                      <i class="bi bi-people"></i>
+                      <i class="bi bi-trophy"></i>
                     </div>
-                    <h4>Student Clubs</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam purus.</p>
+                    <h4>STEM Program</h4>
+                    <p>Tumutumu Girls High School is a Science, Technology, Engineering, and Mathematics (STEM) Model School. The program was launched in 2016. <br><br>The main purpose is to narrow the gap between the demand and supply of existing technical skills that are lacking and to ensure school grandaunts have desirable skills for the job market.
+
+</p>
                   </div>
                 </div>
 
                 <div class="col-md-6" data-aos="zoom-in" data-aos-delay="300">
                   <div class="student-activity-item">
                     <div class="icon-box">
-                      <i class="bi bi-trophy"></i>
+                      <i class="bi bi-people"></i>
                     </div>
-                    <h4>Sports Events</h4>
-                    <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h4>ASPNET Program</h4>
+                    <p>The UNESCO Associated Schools Network (ASPNET) links educational institutions across the world around a common goal: to build the defenses of peace in the minds of children and young people. <br><br>The member schools work in support of international understanding dialogue, sustainable development and quality education in practice.</p>
                   </div>
                 </div>
-
-                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="student-activity-item">
-                    <div class="icon-box">
-                      <i class="bi bi-music-note-beamed"></i>
-                    </div>
-                    <h4>Arts &amp; Culture</h4>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="500">
-                  <div class="student-activity-item">
-                    <div class="icon-box">
-                      <i class="bi bi-globe-americas"></i>
-                    </div>
-                    <h4>Global Experiences</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-                  </div>
-                </div>
+<!--  -->
               </div>
 
               <div class="students-life-cta" data-aos="fade-up" data-aos-delay="600">
-                <a href="students-life.html" class="btn btn-primary">View All Student Activities</a>
+                <a href="students-life.html" class="btn btn-primary">Explore our Special Programs</a>
               </div>
             </div>
           </div>
