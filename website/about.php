@@ -107,7 +107,7 @@
     <div class="page-title dark-background" style="background-image: url(assets/img/education/showcase-1.webp);">
       <div class="container position-relative">
         <h1>About</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+        <p>Tumutumu Girls High School has a rich history rooted in faith, service, and the empowerment of the girl child.</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
@@ -126,41 +126,41 @@
           <div class="col-lg-6">
             <div class="about-content" data-aos="fade-up" data-aos-delay="200">
               <h3>Our Story</h3>
-              <h2>Educating Minds, Inspiring Hearts</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio ac nisi tristique venenatis. Nullam feugiat ipsum vitae justo finibus, in sagittis dolor malesuada. Aenean vel fringilla est, a vulputate massa.</p>
+              <h2>Historical Background </h2>
+              <p>The name Tumutumu is derived from the local dialect (Kikuyu) meaning a place full of dry firewood (Tuku tumu tumu).</p>
 
               <div class="timeline">
                 <div class="timeline-item">
                   <div class="timeline-dot"></div>
                   <div class="timeline-content">
-                    <h4>1965</h4>
-                    <p>Etiam at tincidunt arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    <h4>1908</h4>
+                    <p> In 1908 a primary school was opened by the Church of Scotland Mission (CMS) on the current site of the Tumutumu Girls High School; hence our sponsor is the P.C.E.A. church.</p>
                   </div>
                 </div>
 
                 <div class="timeline-item">
                   <div class="timeline-dot"></div>
                   <div class="timeline-content">
-                    <h4>1982</h4>
-                    <p>Donec dignissim, odio ac imperdiet luctus, ante nisl accumsan justo, nec tempus augue mi in nulla.</p>
+                    <h4>1930</h4>
+                    <p>In the early 1930s, the school became a co-educational boarding primary school and in the late 1930s, a teacher-training college was opened alongside the primary school.</p>
                   </div>
                 </div>
 
                 <div class="timeline-item">
                   <div class="timeline-dot"></div>
                   <div class="timeline-content">
-                    <h4>1998</h4>
-                    <p>Suspendisse potenti. Nullam lacinia dictum auctor. Phasellus euismod sem at dui imperdiet, ac tincidunt mi placerat.</p>
+                    <h4>1961</h4>
+                    <p>Three decades later in 1961, the primary school was moved to an adjacent site where it still stands.</p>
                   </div>
                 </div>
 
                 <div class="timeline-item">
                   <div class="timeline-dot"></div>
                   <div class="timeline-content">
-                    <h4>2010</h4>
-                    <p>Vestibulum ultrices magna ut faucibus sollicitudin. Sed eget venenatis enim, nec imperdiet ex.</p>
+                    <h4>1964</h4>
+                    <p>In 1964, the teacher’s college was moved to Kagumo Teachers College, and the premises were turned to Tumutumu Girls High School. The first intake had thirty-five girls and two teachers. The current student and teacher population stands at 1567 and 75 respectively.</p>
                   </div>
-                </div>
+                </div>          
               </div>
             </div>
           </div>
