@@ -219,7 +219,7 @@
                 <img src="assets/img/web/admin.webp" alt="Admin Block" class="img-fluid rounded-4 shadow-lg">
               </div>
               <div class="image-stack-item image-stack-item-bottom" data-aos="zoom-in" data-aos-delay="500">
-                <img src="assets/img/web/students.webp" alt="Students" class="img-fluid rounded-4 shadow-lg">
+                <img src="assets/img/web/assembly.webp" alt="Students" class="img-fluid rounded-4 shadow-lg">
               </div>
             </div>
           </div>
@@ -373,7 +373,7 @@
         <div class="row align-items-center gy-4">
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
             <div class="students-life-img position-relative">
-              <img src="assets/img/education/education-square-11.webp" class="img-fluid rounded-4 shadow-sm" alt="Students Life">
+              <img src="assets/img/web/stem.webp" class="img-fluid rounded-4 shadow-sm" alt="Students Life">
               <div class="img-overlay">
                 <h3>Discover Student Life</h3>
                 <a href="students-life.html" class="explore-btn">Explore More <i class="bi bi-arrow-right"></i></a>
