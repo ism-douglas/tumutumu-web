@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Tumutumu Girls High School - Home</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Tumutumu Girls">
+  <meta name="keywords" content="Tumutumu Girls High School">
 
   <!-- Favicons -->
   <link href="assets/img/tumutumu.webp" rel="icon">
@@ -50,50 +50,34 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li class="dropdown"><a href="about.html"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="./" class="active">Home</a></li>
+          <li class="dropdown"><a href="about.php"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="admissions.html">Admissions</a></li>
-              <li><a href="academics.html">Academics</a></li>
-              <li><a href="faculty-staff.html">Faculty &amp; Staff</a></li>
-              <li><a href="campus-facilities.html">Campus &amp; Facilities</a></li>
+              <li><a href="about.php">Our History</a></li>
+              <li><a href="academics.php">Academics Programs</a></li>
+              <li><a href="principal.php">Chief Principal</a></li>
+              <li><a href="campml">School Anthem</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="about.php"><span>Media</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="events.php">Events</a></li>
+              <li><a href="news.php">News</a></li>
+              <li><a href="gallery.php">Gallery</a></li>
+              <li><a href="videos.php">Videos</a></li>
             </ul>
           </li>
 
-          <li><a href="students-life.html">Students Life</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="events.html">Events</a></li>
+          <li><a href="students-life.html">Students Life</a></li>         
           <li><a href="alumni.html">Alumni</a></li>
-          <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>eLearning</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="news-details.html">News Details</a></li>
-              <li><a href="event-details.html">Event Details</a></li>
-              <li><a href="privacy.html">Privacy</a></li>
-              <li><a href="terms-of-service.html">Terms of Service</a></li>
-              <li><a href="404.html">Error 404</a></li>
-              <li><a href="starter-page.html">Starter Page</a></li>
+              <li><a href="news-details.html">Students Portal</a></li>
+              <li><a href="event-details.html">Teachers Portal</a></li>
+              
             </ul>
-          </li>
-
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
+          </li>        
+          <li><a href="contact.php">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -178,12 +162,12 @@
           <div class="row gy-4">
             <div class="col-md-6 col-xl-4 col-12 ticker-item">
               <span class="date">NOV 15</span>
-              <span class="title">Open House Day</span>
+              <span class="title">KCSE Exams</span>
               <a href="#" class="btn-register">Register</a>
             </div>
             <div class="col-md-6 col-12 col-xl-4  ticker-item">
               <span class="date">DEC 5</span>
-              <span class="title">Application Workshop</span>
+              <span class="title">Innovation Week Workshop</span>
               <a href="#" class="btn-register">Register</a>
             </div>
             <div class="col-md-6 col-12 col-xl-4 ticker-item">
