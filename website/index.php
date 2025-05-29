@@ -381,7 +381,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Special Programs</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>We strive to be a 21st Century institution; thus, our students are well equipped</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -436,334 +436,6 @@
 
     </section><!-- /Students Life Block Section -->
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="testimonial-masonry">
-
-          <div class="testimonial-item" data-aos="fade-up">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Implementing innovative strategies has revolutionized our approach to market challenges and competitive positioning.</p>
-              <div class="client-info">
-                <div class="client-image">
-                  <img src="assets/img/person/person-f-7.webp" alt="Client">
-                </div>
-                <div class="client-details">
-                  <h3>Rachel Bennett</h3>
-                  <span class="position">Strategy Director</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="100">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Exceptional service delivery and innovative solutions have transformed our business operations, leading to remarkable growth and enhanced customer satisfaction across all touchpoints.</p>
-              <div class="client-info">
-                <div class="client-image">
-                  <img src="assets/img/person/person-m-7.webp" alt="Client">
-                </div>
-                <div class="client-details">
-                  <h3>Daniel Morgan</h3>
-                  <span class="position">Chief Innovation Officer</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Strategic partnership has enabled seamless digital transformation and operational excellence.</p>
-              <div class="client-info">
-                <div class="client-image">
-                  <img src="assets/img/person/person-f-8.webp" alt="Client">
-                </div>
-                <div class="client-details">
-                  <h3>Emma Thompson</h3>
-                  <span class="position">Digital Lead</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Professional expertise and dedication have significantly improved our project delivery timelines and quality metrics.</p>
-              <div class="client-info">
-                <div class="client-image">
-                  <img src="assets/img/person/person-m-8.webp" alt="Client">
-                </div>
-                <div class="client-details">
-                  <h3>Christopher Lee</h3>
-                  <span class="position">Technical Director</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="400">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Collaborative approach and industry expertise have revolutionized our product development cycle, resulting in faster time-to-market and increased customer engagement levels.</p>
-              <div class="client-info">
-                <div class="client-image">
-                  <img src="assets/img/person/person-f-9.webp" alt="Client">
-                </div>
-                <div class="client-details">
-                  <h3>Olivia Carter</h3>
-                  <span class="position">Product Manager</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="500">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Innovative approach to user experience design has significantly enhanced our platform's engagement metrics and customer retention rates.</p>
-              <div class="client-info">
-                <div class="client-image">
-                  <img src="assets/img/person/person-m-13.webp" alt="Client">
-                </div>
-                <div class="client-details">
-                  <h3>Nathan Brooks</h3>
-                  <span class="position">UX Director</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="stats-overview" data-aos="fade-right" data-aos-delay="200">
-              <h2 class="stats-title">Excellence in Education for Over 50 Years</h2>
-              <p class="stats-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel ultricies magna. Maecenas finibus convallis turpis, non facilisis justo egestas in. Nulla facilisi. Fusce consectetur, enim eget aliquet volutpat, lacus nulla semper velit.</p>
-              <div class="stats-cta">
-                <a href="#" class="btn btn-primary">Learn More</a>
-                <a href="#" class="btn btn-outline">Virtual Tour</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="row g-4">
-              <div class="col-md-6">
-                <div class="stats-card" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="stats-icon">
-                    <i class="bi bi-people-fill"></i>
-                  </div>
-                  <div class="stats-number">
-                    <span data-purecounter-start="0" data-purecounter-end="94" data-purecounter-duration="1" class="purecounter"></span>%
-                  </div>
-                  <div class="stats-label">Graduation Rate</div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="stats-card" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="stats-icon">
-                    <i class="bi bi-person-workspace"></i>
-                  </div>
-                  <div class="stats-number">
-                    <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>:1
-                  </div>
-                  <div class="stats-label">Student-Faculty Ratio</div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="stats-card" data-aos="zoom-in" data-aos-delay="500">
-                  <div class="stats-icon">
-                    <i class="bi bi-award"></i>
-                  </div>
-                  <div class="stats-number">
-                    <span data-purecounter-start="0" data-purecounter-end="125" data-purecounter-duration="1" class="purecounter"></span>+
-                  </div>
-                  <div class="stats-label">Academic Programs</div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="stats-card" data-aos="zoom-in" data-aos-delay="600">
-                  <div class="stats-icon">
-                    <i class="bi bi-cash-stack"></i>
-                  </div>
-                  <div class="stats-number">$<span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>M
-                  </div>
-                  <div class="stats-label">Research Funding</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-lg-12">
-            <div class="achievements-gallery" data-aos="fade-up" data-aos-delay="700">
-              <div class="row g-4">
-                <div class="col-md-4">
-                  <div class="achievement-item">
-                    <img src="assets/img/education/education-1.webp" alt="Achievement" class="img-fluid">
-                    <div class="achievement-content">
-                      <h4>Top-Ranked Programs</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel ultricies magna.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="achievement-item">
-                    <img src="assets/img/education/education-2.webp" alt="Achievement" class="img-fluid">
-                    <div class="achievement-content">
-                      <h4>State-of-the-Art Facilities</h4>
-                      <p>Maecenas finibus convallis turpis, non facilisis justo egestas in. Nulla facilisi.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="achievement-item">
-                    <img src="assets/img/education/education-3.webp" alt="Achievement" class="img-fluid">
-                    <div class="achievement-content">
-                      <h4>Global Alumni Network</h4>
-                      <p>Fusce consectetur, enim eget aliquet volutpat, lacus nulla semper velit, et luctus.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- Recent News Section -->
-    <section id="recent-news" class="recent-news section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Recent News</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <article>
-
-              <div class="post-img">
-                <img src="assets/img/blog/blog-post-1.webp" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Politics</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/person/person-f-12.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Maria Doe</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <article>
-
-              <div class="post-img">
-                <img src="assets/img/blog/blog-post-2.webp" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Sports</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/person/person-f-13.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Allisa Mayer</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 5, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <article>
-
-              <div class="post-img">
-                <img src="assets/img/blog/blog-post-3.webp" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Entertainment</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/person/person-m-10.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Mark Dower</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 22, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-        </div><!-- End recent posts list -->
-
-      </div>
-
-    </section><!-- /Recent News Section -->
 
     <!-- Events Section -->
     <section id="events" class="events section">
@@ -771,7 +443,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Events</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Catch up with all the updated events for our stakeholders</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -813,7 +485,7 @@
               <div class="event-content">
                 <div class="event-tag academic">Academic</div>
                 <h3>Science Fair Exhibition</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Tumutumu Girls is an institution that has stood as a beacon of hope, discipline, and academic excellence for generations.</p>
                 <div class="event-meta">
                   <div class="meta-item">
                     <i class="bi bi-clock"></i>
@@ -842,7 +514,7 @@
               <div class="event-content">
                 <div class="event-tag sports">Sports</div>
                 <h3>Annual Sports Day</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                <p>Tumutumu Girls is an institution that has stood as a beacon of hope, discipline, and academic excellence for generations.</p>
                 <div class="event-meta">
                   <div class="meta-item">
                     <i class="bi bi-clock"></i>
@@ -871,7 +543,7 @@
               <div class="event-content">
                 <div class="event-tag arts">Arts</div>
                 <h3>Spring Music Concert</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+                <p>Tumutumu Girls is an institution that has stood as a beacon of hope, discipline, and academic excellence for generations</p>
                 <div class="event-meta">
                   <div class="meta-item">
                     <i class="bi bi-clock"></i>
@@ -900,7 +572,7 @@
               <div class="event-content">
                 <div class="event-tag community">Community</div>
                 <h3>Parent-Teacher Conference</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
+                <p>Tumutumu Girls is an institution that has stood as a beacon of hope, discipline, and academic excellence for generations.</p>
                 <div class="event-meta">
                   <div class="meta-item">
                     <i class="bi bi-clock"></i>
