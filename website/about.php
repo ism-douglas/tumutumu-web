@@ -167,7 +167,7 @@
 
           <div class="col-lg-6">
             <div class="about-image" data-aos="zoom-in" data-aos-delay="300">
-              <img src="assets/img/education/campus-5.webp" alt="Campus" class="img-fluid rounded">
+              <img src="assets/img/web/teachers.webp" alt="Campus" class="img-fluid rounded">
 
               <div class="mission-vision" data-aos="fade-up" data-aos-delay="400">
                 <div class="mission">
