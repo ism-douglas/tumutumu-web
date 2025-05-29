@@ -9,7 +9,7 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/tlogo.webp" rel="icon">
+  <link href="assets/img/tumutumu.webp" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -43,7 +43,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/tlogo.webp" alt="">
+        <img src="assets/img/tumutumu.webp" alt="Tumutumu Girls Logo">
         <!-- <i class="bi bi-buildings"></i> -->
         <h1 class="sitename">T.G.H.S</h1>
       </a>
