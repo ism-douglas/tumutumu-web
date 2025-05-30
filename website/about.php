@@ -49,7 +49,7 @@
         <p>Tumutumu Girls High School has a rich history rooted in faith, service, and the empowerment of the girl child.</p>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="./">Home</a></li>
             <li class="current">About</li>
           </ol>
         </nav>
