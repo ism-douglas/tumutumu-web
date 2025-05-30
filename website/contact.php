@@ -131,7 +131,7 @@
               </div>
               <div class="info-content">
                 <h4>Our Address</h4>
-                <p>1842 Maple Avenue, Portland, Oregon 97204</p>
+                <p>P.O. BOX 197-10101, Karatina</p>
               </div>
             </div>
           </div>
@@ -143,8 +143,7 @@
               </div>
               <div class="info-content">
                 <h4>Email Address</h4>
-                <p>info@example.com</p>
-                <p>contact@example.com</p>
+                <p>admin@tumutumugirls.sc.ke</p>                
               </div>
             </div>
           </div>
@@ -156,7 +155,7 @@
               </div>
               <div class="info-content">
                 <h4>Hours of Operation</h4>
-                <p>Sunday-Fri: 9 AM - 6 PM</p>
+                <p>Sunday-Fri: 8 AM - 6 PM</p>
                 <p>Saturday: 9 AM - 4 PM</p>
               </div>
             </div>
