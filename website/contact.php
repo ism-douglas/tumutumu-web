@@ -107,10 +107,10 @@
     <div class="page-title dark-background" style="background-image: url(assets/img/education/showcase-1.webp);">
       <div class="container position-relative">
         <h1>Contact</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+        <p>We are very ready at your service incase of any inquries/complaints/suggestions.</p>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="./">Home</a></li>
             <li class="current">Contact</li>
           </ol>
         </nav>
@@ -154,9 +154,8 @@
                 <i class="bi bi-headset"></i>
               </div>
               <div class="info-content">
-                <h4>Hours of Operation</h4>
-                <p>Sunday-Fri: 8 AM - 6 PM</p>
-                <p>Saturday: 9 AM - 4 PM</p>
+                <h4>Days of Operation</h4>
+                <p>Monday to Friday</p>
               </div>
             </div>
           </div>
