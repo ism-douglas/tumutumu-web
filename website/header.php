@@ -28,7 +28,7 @@
             </ul>
           </li>
 
-          <li><a href="student.php">Students Life</a></li>         
+          <li><a href="academics.php">Students Life</a></li>         
           <li><a href="alumni.php">Alumni</a></li>
           <li class="dropdown"><a href="#"><span>eLearning</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
