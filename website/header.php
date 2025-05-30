@@ -22,13 +22,13 @@
           <li class="dropdown"><a href="about.php"><span>Media</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="events.php">Events</a></li>
-              <li><a href="news.php">News</a></li>
+              <li><a href="events.php">News</a></li>
               <li><a href="#0">Gallery</a></li>
               <li><a href="#0">Videos</a></li>
             </ul>
           </li>
 
-          <li><a href="academics.php">Students Life</a></li>         
+          <li><a href="academics.php">Students' Life</a></li>         
           <li><a href="alumni.php">Alumni</a></li>
           <li class="dropdown"><a href="#"><span>eLearning</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
