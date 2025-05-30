@@ -68,12 +68,12 @@
             </ul>
           </li>
 
-          <li><a href="students-life.html">Students Life</a></li>         
-          <li><a href="alumni.html">Alumni</a></li>
+          <li><a href="student.php">Students Life</a></li>         
+          <li><a href="alumni.php">Alumni</a></li>
           <li class="dropdown"><a href="#"><span>eLearning</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="news-details.html">Students Portal</a></li>
-              <li><a href="event-details.html">Teachers Portal</a></li>
+              <li><a href="https://portal.tumutumugirls.sc.ke/">Students Portal</a></li>
+              <li><a href="https://teachers.tumutumugirls.sc.ke/">Teachers Portal</a></li>
               
             </ul>
           </li>        
