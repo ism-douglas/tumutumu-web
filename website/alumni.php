@@ -163,14 +163,19 @@
           </div>
 
           <div class="row">
-            <div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-12 col-md-12 text-center" data-aos="fade-up" data-aos-delay="300">
               <div class="alumni-profile">
                 
                 <div class="profile-body">
-                  <h4>Emma Richardson</h4>
-                  <span class="profile-title">Climate Science Researcher</span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis velit a enim tincidunt, sed tincidunt nulla feugiat. Cras efficitur magna in metus lacinia.</p>
-                  <a href="#alumni-connect" class="btn-view-profile">Stay Connected <i class="bi bi-arrow-right"></i></a>
+                  <h4>Dr. Purity Ngina </h4>
+                  <span class="profile-title">PhD holder in Biomathematics </span>
+                  <p>Dr. Ngina made history by becoming the youngest PhD holder in Biomathematics in the country. She was admitted to Tumutumu High School in Nyeri. 
+                After struggling to pay her school fees throughout high school, she scored B+ and was admitted to Egerton University to study for a Bachelor of Sciences degree in Mathematics. She was then offered a full scholarship to pursue a master’s in applied mathematics after getting a First-Class honors degree, in 2013.
+                In 2016, she joined Strathmore University as an assistant lecturer. The German Academic Exchange paid her a PhD tuition fee. 
+                On June 29, 2018, she was among the three doctorate graduates at Strathmore University.
+                Ngina now hopes to mentor girls to pursue Mathematics
+                </p>
+                  
                 </div>
                 
               </div>
