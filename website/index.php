@@ -612,44 +612,44 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Homepage</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Our Programs</a></li>
-            <li><a href="#">News and Blog</a></li>
-            <li><a href="#">Events Calendar </a></li>
+            <li><a href="./">Homepage</a></li>
+            <li><a href="about.php">About us</a></li>
+            <li><a href="academics.php">Our Programs</a></li>
+            <li><a href="events.php">News and Blog</a></li>
+            <li><a href="events.php">Events Calendar </a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Academics</h4>
           <ul>
-            <li><a href="#">Students Portal</a></li>
-            <li><a href="#">Teachers Portal</a></li>
-            <li><a href="#">KSCE Results</a></li>
-            <li><a href="#">School Library</a></li>
-            <li><a href="#">Computer Lab</a></li>
+            <li><a href="https://portal.tumutumugirls.sc.ke/">Students Portal</a></li>
+            <li><a href="https://teachers.tumutumugirls.sc.ke/">Teachers Portal</a></li>
+            <li><a href="https://results.knec.ac.ke">KSCE Results</a></li>
+            <li><a href="academics.php">School Library</a></li>
+            <li><a href="academics.php">Computer Lab</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Stakeholders</h4>
           <ul>
-            <li><a href="#">Admissions</a></li>
-            <li><a href="#">Our History</a></li>
-            <li><a href="#">Tender Notices</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Report Abuse</a></li>
+            <li><a href="contact.php">Admissions</a></li>
+            <li><a href="about.php">Our History</a></li>
+            <li><a href="contact.php">Tender Notices</a></li>
+            <li><a href="contact.php">Privacy Policy</a></li>
+            <li><a href="contact.php">Report Abuse</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Others Links</h4>
           <ul>
-            <li><a href="#">KNEC</a></li>
-            <li><a href="#">TSC</a></li>
-            <li><a href="#">STEM</a></li>
-            <li><a href="#">ASPNET</a></li>
-            <li><a href="#">YSK</a></li>
+            <li><a href="https://www.knec.ac.ke/">KNEC</a></li>
+            <li><a href="https://www.tsc.go.ke/">TSC</a></li>
+            <li><a href="https://vision2030.go.ke/project/development-of-the-science-technology-engineering-and-mathematics-sector/">STEM</a></li>
+            <li><a href="https://www.unesco.org/en/aspnet">ASPNET</a></li>
+            <li><a href="https://ysk.co.ke/">YSK</a></li>
           </ul>
         </div>
 
