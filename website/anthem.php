@@ -120,10 +120,10 @@
     <!-- Privacy Section -->
     <section id="privacy" class="privacy section">
 
-      <div class="container" data-aos="fade-up">
-       
+      <div class="container" data-aos="fade-up">        
+            
         <!-- Main Content -->
-        <div class="privacy-content" data-aos="fade-up">
+        <div class="privacy-header" data-aos="fade-up">
           <!-- Introduction -->
           <div class="content-section">
             <h2>Tumutumu Girls School Anthem</h2>
@@ -132,7 +132,7 @@
             We give you thanks for our school so good<br>
             So beautiful,<br>
             In gratitude, we shall arise and shine</p> 
-            <p>
+            <p><b>Chorus</b><br>
                     <i>Arise and shine<br> 
                     Oh yes arise and shine,<br>
                     Cause you are the school upon the hill top,<br>
@@ -147,7 +147,7 @@
             You are our pride,<br>
             You are our joy,<br>
             You are our hope for the future too.<br></p>
-            <p>
+            <p>b>Chorus</b><br>
                     <i>Arise and shine<br> 
                     Oh yes arise and shine,<br>
                     Cause the school upon the hill top,<br>
