@@ -147,7 +147,7 @@
             You are our pride,<br>
             You are our joy,<br>
             You are our hope for the future too.<br></p>
-            <p>b>Chorus</b><br>
+            <p><b>Chorus</b><br>
                     <i>Arise and shine<br> 
                     Oh yes arise and shine,<br>
                     Cause the school upon the hill top,<br>
@@ -159,15 +159,7 @@
           </div>          
         </div>
 
-        <!-- Contact Section -->
-        <div class="privacy-contact" data-aos="fade-up">
-          <h2>Contact Us</h2>
-          <p>If you have any questions/queries, please contact us:</p>
-          <div class="contact-details">
-            <p><strong>Email:</strong> admin@tumutumugirls.sc.ke</p>
-            <p><strong>Address:</strong> P.O. BOX 197-10101, Karatina</p>
-          </div>
-        </div>
+       
 
       </div>
 
