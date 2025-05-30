@@ -53,8 +53,8 @@
           <li><a href="./" class="active">Home</a></li>
           <li class="dropdown"><a href="about.php"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="about.php">Our History</a></li>
-              <li><a href="academics.php">Academics Programs</a></li>
+              <li><a href="about.php">Our Profile</a></li>
+              <li><a href="academics.php">Academics</a></li>
               <li><a href="principal.php">Chief Principal</a></li>
               <li><a href="anthem.php">School Anthem</a></li>
             </ul>
@@ -63,8 +63,8 @@
             <ul>
               <li><a href="events.php">Events</a></li>
               <li><a href="news.php">News</a></li>
-              <li><a href="gallery.php">Gallery</a></li>
-              <li><a href="videos.php">Videos</a></li>
+              <li><a href="#0">Gallery</a></li>
+              <li><a href="#0">Videos</a></li>
             </ul>
           </li>
 
@@ -209,7 +209,7 @@
               
               <div class="ms-3">
                
-                <a href="#" class="program-btn"><span>Principal's Report</span> <i class="bi bi-arrow-right"></i></a>
+                <a href="principal.php" class="program-btn"><span>Principal's Report</span> <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
