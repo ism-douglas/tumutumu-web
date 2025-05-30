@@ -199,7 +199,7 @@
                     <i class="bi bi-people-fill"></i>
                   </div>
                   <h4>Mentorship Program</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada.</p>
+                  <p>Ways to engage with the community and make a difference as an alumni.</p>
                   <a href="#" class="card-link">Become a Mentor</a>
                 </div>
               </div>
@@ -210,7 +210,7 @@
                     <i class="bi bi-calendar-event"></i>
                   </div>
                   <h4>Alumni Events</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada.</p>
+                  <p>Ways to engage with the community and make a difference as an alumni.</p>
                   <a href="#" class="card-link">Upcoming Events</a>
                 </div>
               </div>
@@ -221,7 +221,7 @@
                     <i class="bi bi-gift"></i>
                   </div>
                   <h4>Give Back</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada.</p>
+                  <p>Ways to engage with the community and make a difference as an alumni.</p>
                   <a href="#" class="card-link">Support Our Mission</a>
                 </div>
               </div>
@@ -232,78 +232,11 @@
                     <i class="bi bi-briefcase"></i>
                   </div>
                   <h4>Career Network</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada.</p>
+                  <p>Ways to engage with the community and make a difference as an alumni.</p>
                   <a href="#" class="card-link">Join Network</a>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="upcoming-events">
-          <div class="section-header text-center" data-aos="fade-up" data-aos-delay="200">
-            <h3>Upcoming Alumni Events</h3>
-            <p>Connect with fellow graduates at these exclusive gatherings</p>
-          </div>
-
-          <div class="events-wrapper" data-aos="fade-up" data-aos-delay="300">
-            <div class="event">
-              <div class="date-badge">
-                <span class="month">JUN</span>
-                <span class="day">18</span>
-              </div>
-              <div class="event-info">
-                <h4>Global Alumni Leadership Summit</h4>
-                <div class="event-meta">
-                  <span><i class="bi bi-pin-map"></i> Grand Hall, Main Campus</span>
-                  <span><i class="bi bi-clock"></i> 10:00 AM - 4:00 PM</span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo.</p>
-              </div>
-              <div class="event-action">
-                <a href="#" class="btn-register">Register</a>
-              </div>
-            </div>
-
-            <div class="event">
-              <div class="date-badge">
-                <span class="month">JUL</span>
-                <span class="day">25</span>
-              </div>
-              <div class="event-info">
-                <h4>Networking Mixer &amp; Career Fair</h4>
-                <div class="event-meta">
-                  <span><i class="bi bi-pin-map"></i> Metropolitan Hotel Conference Center</span>
-                  <span><i class="bi bi-clock"></i> 6:30 PM - 9:00 PM</span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo.</p>
-              </div>
-              <div class="event-action">
-                <a href="#" class="btn-register">Register</a>
-              </div>
-            </div>
-
-            <div class="event">
-              <div class="date-badge">
-                <span class="month">SEP</span>
-                <span class="day">09</span>
-              </div>
-              <div class="event-info">
-                <h4>Homecoming Weekend 2023</h4>
-                <div class="event-meta">
-                  <span><i class="bi bi-pin-map"></i> University Campus</span>
-                  <span><i class="bi bi-clock"></i> All Weekend</span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo.</p>
-              </div>
-              <div class="event-action">
-                <a href="#" class="btn-register">Register</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="400">
-            <a href="#" class="calendar-link">View Full Events Calendar <i class="bi bi-arrow-right-circle"></i></a>
           </div>
         </div>
 
@@ -312,19 +245,19 @@
             <div class="col-lg-7">
               <div class="impact-content">
                 <h3>Make a Lasting Impact</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus, velit vel fringilla venenatis, urna risus volutpat nisi, ac commodo dolor nulla quis lorem. In mattis dictum malesuada. Vestibulum non mi eu justo rutrum tempus.</p>
+                <p>Founded on strong Christian values and under the sponsorship of the Presbyterian Church of East Africa (PCEA), Tumutumu Girls High School has a rich history rooted in faith, service, and the empowerment of the girl child. </p>
                 <div class="impact-buttons">
-                  <a href="#" class="btn-donate">Donate Now</a>
-                  <a href="#" class="btn-learn-more">Learn About Impact <i class="bi bi-arrow-right"></i></a>
+                  <a href="#" class="btn-donate">Support Now</a>
+                  <a href="#" class="btn-learn-more">Contact Us <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </div>
             <div class="col-lg-5">
               <div class="impact-image">
-                <img src="assets/img/education/education-8.webp" alt="Student scholarship recipients" class="img-fluid">
+                <img src="assets/img/web/students-hall.webp" alt="Student scholarship recipients" class="img-fluid">
                 <div class="impact-stat">
-                  <span class="stat-number">$2.4M</span>
-                  <span class="stat-text">in scholarships funded by alumni last year</span>
+                  <span class="stat-number">1500+</span>
+                  <span class="stat-text">girls in session every academic year</span>
                 </div>
               </div>
             </div>
