@@ -41,7 +41,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="./" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/tumutumu.webp" alt="Tumutumu Girls Logo">
         <!-- <i class="bi bi-buildings"></i> -->
@@ -56,7 +56,7 @@
               <li><a href="about.php">Our History</a></li>
               <li><a href="academics.php">Academics Programs</a></li>
               <li><a href="principal.php">Chief Principal</a></li>
-              <li><a href="campml">School Anthem</a></li>
+              <li><a href="anthem.php">School Anthem</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="about.php"><span>Media</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
