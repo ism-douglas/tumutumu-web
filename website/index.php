@@ -190,7 +190,7 @@
           <div class="col-lg-6 pe-lg-5" data-aos="fade-right" data-aos-delay="200">
             <h2 class="display-6 fw-bold mb-4">Arise and Shine, <span>For Excellence</span></h2>
             <p class="lead mb-4">At Tũmũtũmũ Girls, we proudly live out our motto: "Arise and Shine for Excellence." This guiding principle inspires every member of our community to rise above mediocrity and shine brightly in all pursuits, both in and out of the classroom.
- We are guided by the following core values: fear of God, professionalism, integrity, performance excellence, creativity and innovation, teamwork, honesty, obedience, and discipline</p>
+            We are guided by the following core values: fear of God, professionalism, integrity, performance excellence, creativity and innovation, teamwork, honesty, obedience, and discipline</p>
             <div class="d-flex flex-wrap gap-4 mb-4">
               <div class="stat-box">
                 <span class="stat-number"><span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1" class="purecounter"></span>+</span>
@@ -376,7 +376,7 @@
               <img src="assets/img/web/stem.webp" class="img-fluid rounded-4 shadow-sm" alt="Students Life">
               <div class="img-overlay">
                 <h3>Discover Student Life</h3>
-                <a href="students-life.html" class="explore-btn">Explore More <i class="bi bi-arrow-right"></i></a>
+                <a href="students.php" class="explore-btn">Explore More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -410,7 +410,7 @@
               </div>
 
               <div class="students-life-cta" data-aos="fade-up" data-aos-delay="600">
-                <a href="students-life.html" class="btn btn-primary">Explore our Special Programs</a>
+                <a href="#0" class="btn btn-primary">Explore our Special Programs</a>
               </div>
             </div>
           </div>
@@ -526,7 +526,7 @@
               </div>
               <div class="event-content">
                 <div class="event-tag arts">Arts</div>
-                <h3>Spring Music Concert</h3>
+                <h3>Annual Drama Festival</h3>
                 <p>Tumutumu Girls is an institution that has stood as a beacon of hope, discipline, and academic excellence for generations</p>
                 <div class="event-meta">
                   <div class="meta-item">
@@ -535,7 +535,7 @@
                   </div>
                   <div class="meta-item">
                     <i class="bi bi-geo-alt"></i>
-                    <span>Performing Arts Center</span>
+                    <span>Multipurpose Hall</span>
                   </div>
                 </div>
                 <div class="event-actions">
