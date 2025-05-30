@@ -136,7 +136,7 @@
                     <p><i class="bi bi-clock"></i> 09:00 AM - 04:00 PM</p>
                     <p><i class="bi bi-geo-alt"></i> Assembly Hall</p>
                   </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin gravida dolor sit amet lacus accumsan.</p>
+                  <p>Welcome to Tumutumu Girls High School. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin gravida dolor sit amet lacus accumsan.</p>
                   <a href="#" class="btn-event">Learn More <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div><!-- End Event Item -->
@@ -152,7 +152,7 @@
                     <p><i class="bi bi-clock"></i> 01:00 PM - 06:00 PM</p>
                     <p><i class="bi bi-geo-alt"></i> Multiple Classrooms</p>
                   </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Proin sagittis nisl rhoncus mattis rhoncus.</p>
+                  <p>Welcome to Tumutumu Girls High School. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Proin sagittis nisl rhoncus mattis rhoncus.</p>
                   <a href="#" class="btn-event">Learn More <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div><!-- End Event Item -->
@@ -168,7 +168,7 @@
                     <p><i class="bi bi-clock"></i> 02:30 PM - 05:30 PM</p>
                     <p><i class="bi bi-geo-alt"></i> Sports Complex</p>
                   </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+                  <p>Welcome to Tumutumu Girls High School. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
                   <a href="#" class="btn-event">Learn More <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div><!-- End Event Item -->
@@ -184,7 +184,7 @@
                     <p><i class="bi bi-clock"></i> 10:00 AM - 01:00 PM</p>
                     <p><i class="bi bi-geo-alt"></i> Assembly Hall</p>
                   </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis.</p>
+                  <p>Welcome to Tumutumu Girls High School. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis.</p>
                   <a href="#" class="btn-event">Learn More <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div><!-- End Event Item -->
