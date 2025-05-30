@@ -162,10 +162,10 @@
         <!-- Contact Section -->
         <div class="privacy-contact" data-aos="fade-up">
           <h2>Contact Us</h2>
-          <p>If you have any questions about this Privacy Policy or our practices, please contact us:</p>
+          <p>If you have any questions/queries, please contact us:</p>
           <div class="contact-details">
-            <p><strong>Email:</strong> privacy@example.com</p>
-            <p><strong>Address:</strong> 123 Privacy Street, Security City, 12345</p>
+            <p><strong>Email:</strong> admin@tumutumugirls.sc.ke</p>
+            <p><strong>Address:</strong> P.O. BOX 197-10101, Karatina</p>
           </div>
         </div>
 
