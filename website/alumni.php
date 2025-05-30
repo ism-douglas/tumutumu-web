@@ -107,7 +107,7 @@
     <div class="page-title dark-background" style="background-image: url(assets/img/education/showcase-1.webp);">
       <div class="container position-relative">
         <h1>Alumni</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+        <p>We are an institution that has stood as a beacon of hope, discipline, and academic excellence for generations.</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
@@ -143,7 +143,7 @@
                     <div class="label">Years of Legacy</div>
                   </div>
                 </div>
-                <a href="#" class="btn btn-discover">Connect with Alumni Community</a>
+                <a href="#alumni-connect" class="btn btn-discover">Connect with Alumni Community</a>
               </div>
             </div>
             <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="300">
@@ -163,76 +163,24 @@
           </div>
 
           <div class="row">
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="300">
               <div class="alumni-profile">
-                <div class="profile-header">
-                  <div class="profile-img">
-                    <img src="assets/img/person/person-f-3.webp" alt="Alumni" class="img-fluid">
-                  </div>
-                  <div class="profile-year">2009</div>
-                </div>
+                
                 <div class="profile-body">
                   <h4>Emma Richardson</h4>
                   <span class="profile-title">Climate Science Researcher</span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis velit a enim tincidunt, sed tincidunt nulla feugiat. Cras efficitur magna in metus lacinia.</p>
-                  <a href="#" class="btn-view-profile">View Profile <i class="bi bi-arrow-right"></i></a>
+                  <a href="#alumni-connect" class="btn-view-profile">Stay Connected <i class="bi bi-arrow-right"></i></a>
                 </div>
-                <div class="achievement-badge">
-                  <i class="bi bi-award"></i>
-                  <span>Environmental Leadership Award</span>
-                </div>
+                
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="alumni-profile">
-                <div class="profile-header">
-                  <div class="profile-img">
-                    <img src="assets/img/person/person-m-7.webp" alt="Alumni" class="img-fluid">
-                  </div>
-                  <div class="profile-year">2013</div>
-                </div>
-                <div class="profile-body">
-                  <h4>Dr. Marcus Johnson</h4>
-                  <span class="profile-title">Neurosurgeon &amp; Medical Innovator</span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis velit a enim tincidunt, sed tincidunt nulla feugiat. Cras efficitur magna in metus.</p>
-                  <a href="#" class="btn-view-profile">View Profile <i class="bi bi-arrow-right"></i></a>
-                </div>
-                <div class="achievement-badge">
-                  <i class="bi bi-stars"></i>
-                  <span>Medical Innovation Excellence</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-              <div class="alumni-profile">
-                <div class="profile-header">
-                  <div class="profile-img">
-                    <img src="assets/img/person/person-f-9.webp" alt="Alumni" class="img-fluid">
-                  </div>
-                  <div class="profile-year">2015</div>
-                </div>
-                <div class="profile-body">
-                  <h4>Sophia Lin</h4>
-                  <span class="profile-title">Tech Entrepreneur &amp; VC Partner</span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis velit a enim tincidunt, sed tincidunt nulla feugiat. Cras efficitur magna in metus.</p>
-                  <a href="#" class="btn-view-profile">View Profile <i class="bi bi-arrow-right"></i></a>
-                </div>
-                <div class="achievement-badge">
-                  <i class="bi bi-lightning"></i>
-                  <span>Tech Visionary of the Year</span>
-                </div>
-              </div>
-            </div>
           </div>
-
-          <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="600">
-            <a href="#" class="btn-explore">Explore More Alumni Stories</a>
-          </div>
+          
         </div>
 
-        <div class="alumni-engagement">
+        <div class="alumni-engagement" id="alumni-connect">
           <div class="section-header text-center" data-aos="fade-up" data-aos-delay="200">
             <h3>How to Stay Connected</h3>
             <p>Ways to engage with the community and make a difference</p>
