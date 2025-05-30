@@ -49,7 +49,7 @@
         <p>We are an institution that has stood as a beacon of hope, discipline, and academic excellence for generations.</p>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="./">Home</a></li>
             <li class="current">Alumni</li>
           </ol>
         </nav>
