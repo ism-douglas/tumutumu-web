@@ -127,7 +127,7 @@
             <div class="about-content" data-aos="fade-up" data-aos-delay="200">
               <h3>Our Story</h3>
               <h2>Historical Background </h2>
-              <p>The name Tumutumu is derived from the local dialect (Kikuyu) meaning a place full of dry firewood (Tuku tumu tumu).</p>
+              <p>The name Tũmũtũmũ is derived from the local dialect (Kikuyu) meaning a place full of dry firewood (Tuku tumu tumu).</p>
 
               <div class="timeline">
                 <div class="timeline-item">
