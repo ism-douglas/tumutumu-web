@@ -45,7 +45,7 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Stakeholders</h4>
           <ul>
-            <li><a href="contact.php">Admissions</a></li>
+            <li><a href="alumni.php">Alumni</a></li>
             <li><a href="about.php">Our History</a></li>
             <li><a href="contact.php">Tender Notices</a></li>
             <li><a href="contact.php">Privacy Policy</a></li>
