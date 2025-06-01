@@ -8,7 +8,7 @@
   <meta name="description" content="Academics - Tumutumu Girls High School">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   <!-- Place favicon.ico in the root directory --> 
+   <!-- For optimisation --> 
   <meta property="og:image" content="https://tumutumugirls.sc.ke/assets/img/tumutumu.webp">
   <meta property="og:title" content="Academics - Tumutumu Girls High School"/>
   <meta property="og:description" content="Tumutumu Girls High School has stood as a beacon of hope, discipline, and academic excellence for generations with a rich history rooted in faith, service, and the empowerment of the girl child""/>
