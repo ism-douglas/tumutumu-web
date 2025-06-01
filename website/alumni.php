@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Academics - Tumutumu Girls High School</title>
+  <title>Alumni - Tumutumu Girls High School</title>
   <meta name="description" content="Alumni - Tumutumu Girls High School">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
