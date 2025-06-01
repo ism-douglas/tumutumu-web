@@ -5,11 +5,16 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Academics - Tumutumu Girls High School</title>
-  <meta name="description" content="Tumutumu Girls">
-  <meta name="keywords" content="Tumutumu Girls High School">
+  <meta name="description" content="Academics - Tumutumu Girls High School">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Place favicon.ico in the root directory --> 
+  <meta property="og:image" content="https://tumutumugirls.sc.ke/assets/img/tumutumu.webp">
+  <meta property="og:title" content="Academics - Tumutumu Girls High School"/>
+  <meta property="og:description" content="Tumutumu Girls High School has stood as a beacon of hope, discipline, and academic excellence for generations with a rich history rooted in faith, service, and the empowerment of the girl child""/>
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/tumutumu.webp" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -43,7 +48,7 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" style="background-image: url(assets/img/education/showcase-1.webp);">
+    <div class="page-title dark-background" style="background-image: url(assets/img/web/admin.webp);">
       <div class="container position-relative">
         <h1>Academics</h1>
         <p>The preferred center of academic excellence in Kenya, committed to developing holistic personalities.</p>
