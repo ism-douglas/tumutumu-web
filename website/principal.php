@@ -13,6 +13,10 @@
   <meta property="og:title" content="Chief Principal - Tumutumu Girls High School"/>
   <meta property="og:description" content="Tumutumu Girls High School has stood as a beacon of hope, discipline, and academic excellence for generations with a rich history rooted in faith, service, and the empowerment of the girl child""/>
 
+  <!-- Favicons -->
+  <link href="assets/img/tumutumu.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
