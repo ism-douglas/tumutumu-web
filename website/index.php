@@ -5,12 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Tumutumu Girls High School - Home</title>
-  <meta name="description" content="Tumutumu Girls">
-  <meta name="keywords" content="Tumutumu Girls High School">
+  <meta name="description" content="Home - Tumutumu Girls High School">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Favicons -->
-  <link href="assets/img/tumutumu.webp" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+   <!-- For optimisation --> 
+  <meta property="og:image" content="https://tumutumugirls.sc.ke/assets/img/tumutumu.webp">
+  <meta property="og:title" content="Home - Tumutumu Girls High School"/>
+  <meta property="og:description" content="Tumutumu Girls High School has stood as a beacon of hope, discipline, and academic excellence for generations with a rich history rooted in faith, service, and the empowerment of the girl child""/>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -57,8 +58,8 @@
                 <h1>Welcome to Tũmũtũmũ Girls' High School</h1>
                 <p>Tumutumu Girls is an institution that has stood as a beacon of hope, discipline, and academic excellence for generations. We are proud to be a center of excellence in STEM education while nurturing our students with spiritual, moral, and leadership qualities balanced with co-curricular activities, innovation, and community service.</p>
                 <div class="cta-buttons">
-                  <a href="#" class="btn-primary">Contact Us</a>
-                  <a href="#" class="btn-secondary">Our History</a>
+                  <a href="contact.php" class="btn-primary">Contact Us</a>
+                  <a href="about.php" class="btn-secondary">Our History</a>
                 </div>
               </div>
             </div>
