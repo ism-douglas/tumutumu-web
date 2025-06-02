@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Principal - Tumutumu Girls High School</title>
-  <meta name="description" content="Tumutumu Girls">
-  <meta name="keywords" content="Tumutumu Girls High School">
+  <title>Chief Principal - Tumutumu Girls High School</title>
+  <meta name="description" content="Chief Principal - Tumutumu Girls High School">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+   <!-- For optimisation --> 
+  <meta property="og:image" content="https://tumutumugirls.sc.ke/assets/img/tumutumu.webp">
+  <meta property="og:title" content="Chief Principal - Tumutumu Girls High School"/>
+  <meta property="og:description" content="Tumutumu Girls High School has stood as a beacon of hope, discipline, and academic excellence for generations with a rich history rooted in faith, service, and the empowerment of the girl child""/>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -43,7 +44,7 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" style="background-image: url(assets/img/education/showcase-1.webp);">
+    <div class="page-title dark-background" style="background-image: url(assets/img/web/admin.webp);">
       <div class="container position-relative">
         <h1>Chief Principal</h1>
         <p>Welcome to Tumutumu Girls High School, the preferred center of academic excellence in Kenya</p>
