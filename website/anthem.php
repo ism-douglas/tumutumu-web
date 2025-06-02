@@ -14,7 +14,7 @@
   <meta property="og:description" content="Tumutumu Girls High School has stood as a beacon of hope, discipline, and academic excellence for generations with a rich history rooted in faith, service, and the empowerment of the girl child""/>
 
   <!-- Favicons -->
-   <link href="assets/img/tumutumu.webp" rel="icon">
+  <link href="assets/img/tumutumu.webp" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
