@@ -60,7 +60,7 @@
             <div class="col-lg-7" data-aos="zoom-out" data-aos-delay="100">
               <div class="hero-content">
                 <h1>Welcome to Tũmũtũmũ Girls' High School</h1>
-                <p>Tumutumu Girls is an institution that has stood as a beacon of hope, discipline, and academic excellence for generations. We are proud to be a center of excellence in STEM education while nurturing our students with spiritual, moral, and leadership qualities balanced with co-curricular activities, innovation, and community service.</p>
+                <p>Tumutumu Girls High School has stood as a beacon of hope, discipline, and academic excellence for generations. We are proud to be a center of excellence in STEM education while nurturing our students with spiritual, moral, and leadership qualities balanced with co-curricular activities, innovation, and community service.</p>
                 <div class="cta-buttons">
                   <a href="contact.php" class="btn-primary">Contact Us</a>
                   <a href="about.php" class="btn-secondary">Our History</a>
