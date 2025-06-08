@@ -54,7 +54,7 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Others Links</h4>
+          <h4>External Links</h4>
           <ul>
             <li><a href="https://www.knec.ac.ke/">KNEC</a></li>
             <li><a href="https://www.tsc.go.ke/">TSC</a></li>
